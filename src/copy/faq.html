@@ -1,0 +1,2128 @@
+<!doctype html>
+<!--[if IE 9]> <html class="ie9 no-js supports-no-cookies" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js supports-no-cookies" lang="en">
+<!--<![endif]-->
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <!--320-->
+  <meta name="theme-color" content="#c4cdd5">
+  <!-- TODO: add favicon -->
+
+  <!-- FIXME: load styles from local -->
+  <link type="text/css" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/layout.theme.css?22384"
+    rel="stylesheet">
+  <link type="text/css"
+    href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/layout.theme.styleLiquid.scss.css?22384"
+    rel="stylesheet">
+  <style>
+    /* TODO: change font-family */
+    @font-face {
+      font-family: Helvetica;
+      font-weight: 400;
+      font-style: normal;
+      src: url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.fe093fe9ca22a15354813c912484945a36b79146.woff2?h1=dXMuc2lydGhlbGFiZWwuY29t&hmac=96cba023c3e021a388d592e4014806e7b7437fb272af791a9aafecc0556a441b") format("woff2"),
+        url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.8bddb85c18a0094c427a9bf65dee963ad88de4e8.woff?h1=dXMuc2lydGhlbGFiZWwuY29t&hmac=0d30b8d58dda09ca3a6f1fbedeac5a5e7bad657c204f5ad7949f9e9f31331930") format("woff");
+    }
+
+    @font-face {
+      font-family: Helvetica;
+      font-weight: 400;
+      font-style: normal;
+      src: url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.fe093fe9ca22a15354813c912484945a36b79146.woff2?h1=dXMuc2lydGhlbGFiZWwuY29t&hmac=96cba023c3e021a388d592e4014806e7b7437fb272af791a9aafecc0556a441b") format("woff2"),
+        url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.8bddb85c18a0094c427a9bf65dee963ad88de4e8.woff?h1=dXMuc2lydGhlbGFiZWwuY29t&hmac=0d30b8d58dda09ca3a6f1fbedeac5a5e7bad657c204f5ad7949f9e9f31331930") format("woff");
+    }
+
+    @font-face {
+      font-family: Helvetica;
+      font-weight: 700;
+      font-style: normal;
+      src: url("https://fonts.shopifycdn.com/helvetica/helvetica_n7.39bee04bd277a9c4e94e2fd42d53f4e3c0afb8a5.woff2?h1=dXMuc2lydGhlbGFiZWwuY29t&hmac=5f0cafeb8f05ee389f3f79f986a85f9793ee39d25d2b85fd22431d23cd246d54") format("woff2"),
+        url("https://fonts.shopifycdn.com/helvetica/helvetica_n7.b95359461a6788d5549e702cb2123bc40c227e49.woff?h1=dXMuc2lydGhlbGFiZWwuY29t&hmac=253939942acd030fe389ac3570473e54ca6b7d8686ffcb06df09f0aae6fca45b") format("woff");
+    }
+
+    @font-face {
+      font-family: Helvetica;
+      font-weight: 700;
+      font-style: oblique;
+      src: url("https://fonts.shopifycdn.com/helvetica/helvetica_o7.215fd4ca1a06214fa01e44328a1992c977700ea2.woff2?h1=dXMuc2lydGhlbGFiZWwuY29t&hmac=7430875980709b05cdb3a9d7ed97f3508be4359c851db143d166c4b850f3940a") format("woff2"),
+        url("https://fonts.shopifycdn.com/helvetica/helvetica_o7.b0a2026ae2aa64d060f9ce0ee1b3c3c1aa21bf88.woff?h1=dXMuc2lydGhlbGFiZWwuY29t&hmac=335dac7f6b8e018eed0e1a9fa0bcc1d6f18928acc4f47fa93d4931817b3bb855") format("woff");
+    }
+
+    :root {
+      --color-accent: #c4cdd5;
+      --color-body-text: #161d25;
+      --color-main-background: #fff;
+      --color-border: #849bb6;
+
+      --font-heading: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+      --font-body: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+      --font-body-weight: 400;
+      --font-body-style: normal;
+      --font-body-bold-weight: 700;
+
+    }
+  </style>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!-- FIXME: change to local -->
+  <script type="text/javascript"
+    src="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/vendors@layout.theme.js?22384" defer="defer"></script>
+  <script type="text/javascript" src="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/layout.theme.js?22384"
+    defer="defer"></script>
+  <link rel="prefetch"
+    href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/vendors@template.article@template.gift_card@template.product.js?22384"
+    as="script">
+  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.article.js?22384"
+    as="script">
+  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.cart.js?22384" as="script">
+  <link rel="prefetch"
+    href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/vendors@template.collection@template.product.js?22384"
+    as="script">
+  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.collection.js?22384"
+    as="script">
+  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.gift_card.js?22384"
+    as="script">
+  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.index.js?22384"
+    as="script">
+  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.page.campaign.js?22384"
+    as="script">
+  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/vendors@template.page.js?22384"
+    as="script">
+  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.page.js?22384" as="script">
+  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.product.js?22384"
+    as="script">
+  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.addresses.js?22384"
+    as="script">
+  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.login.js?22384"
+    as="script">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', '');
+    var customerlabel = false;
+    window.theme = {
+      strings: {
+        addToCart: "Add to Cart",
+        soldOut: "Sold Out",
+        unavailable: "Unavailable"
+      },
+      moneyFormat: "\u003cspan class=money\u003eUSD ${{amount_no_decimals}}\u003c\/span\u003e"
+    };
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <!-- TODO: research if it's meanfull -->
+  <script crossorigin="anonymous" defer="defer"
+    src="//cdn.shopify.com/s/assets/shopify_pay/storefront-8ddbd55cc19e1ebbff92d676e1481c8e6b42e0c2714d3fdf6b810b1f193347b8.js?v=20190107"></script>
+  <script integrity="sha256-XvJAR0GWTFITqI9Je626Jg9XHK1rY52ie+f6Eq4D/dM=" defer="defer"
+    src="//cdn.shopify.com/s/assets/storefront/express_buttons-5ef2404741964c5213a88f497badba260f571cad6b639da27be7fa12ae03fdd3.js"
+    crossorigin="anonymous"></script>
+  <script integrity="sha256-qzPTa4Ven/Yc2yyXr9BKZWCTXSrPTCnbGdWsxA7YCw0=" defer="defer"
+    src="//cdn.shopify.com/s/assets/storefront/features-ab33d36b855e9ff61cdb2c97afd04a6560935d2acf4c29db19d5acc40ed80b0d.js"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" media="screen"
+    href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/compiled_assets/styles.css?22384">
+  <script id="sections-script" data-sections="contact" defer="defer"
+    src="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/compiled_assets/scripts.js?22384"></script>
+
+</head>
+
+<body class="template-page">
+
+
+  <a class="in-page-link visually-hidden skip-link" href="#MainContent">Skip to content</a>
+
+  <div id="shopify-section-header" class="shopify-section">
+    <section data-section-id="header" data-section-type="header">
+      <header class="nav-down header header-light">
+        <div class="row align-items-center no-gutters">
+          <div class="col-md-7 col">
+            <div class="mobile-menu d-xl-none">
+              <span class="hamburger">
+                <svg id="burger" xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13">
+
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                        stroke: #000;
+                        stroke-width: 1px;
+                        fill-rule: evenodd;
+                      }
+                    </style>
+                  </defs>
+                  <path class="cls-1" d="M0,0.5H18" />
+                  <path id="Shape_906_copy" data-name="Shape 906 copy" class="cls-1" d="M0,6.5H18" />
+                  <path id="Shape_906_copy_2" data-name="Shape 906 copy 2" class="cls-1" d="M0,12.5H18" />
+                </svg>
+              </span>
+              <span class="close-menu d-none">
+                <svg id="x" xmlns="http://www.w3.org/2000/svg" width="17.875" height="17.875"
+                  viewBox="0 0 17.875 17.875">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #fff;
+                        stroke: #000;
+                        stroke-width: 1px;
+                        fill-rule: evenodd;
+                      }
+                    </style>
+                  </defs>
+                  <path class="cls-1" d="M0.4,0.4L17.6,17.6" transform="translate(-0.063 -0.063)" />
+                  <path id="Shape_907_copy" data-name="Shape 907 copy" class="cls-1" d="M17.562,0.437L0.438,17.562"
+                    transform="translate(-0.063 -0.063)" />
+                </svg>
+
+                <div class="mobilelogo">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 315.5 102.8"
+                    style="enable-background:new 0 0 315.5 102.8;" xml:space="preserve">
+                    <g>
+                      <path d="M40.3,42.1L30.4,38c-7.2-3-10.8-6.8-10.8-11.7c0-3.5,1.4-6.4,4.1-8.7c2.7-2.4,6.2-3.5,10.3-3.5c3.4,0,6.1,0.7,8.3,2.1
+		c2.1,1.2,4.2,3.8,6.5,7.7L61,16.6C54.5,5.5,45.6,0,34.2,0C25.7,0,18.7,2.5,13,7.6c-5.7,5-8.5,11.2-8.5,18.7
+		c0,11,6.8,19.4,20.3,25.1l9.6,4c2.5,1.1,4.6,2.2,6.4,3.4c1.8,1.2,3.3,2.4,4.4,3.8c1.1,1.3,2,2.8,2.5,4.4c0.5,1.6,0.8,3.4,0.8,5.3
+		c0,4.8-1.5,8.7-4.6,11.9c-3.1,3.1-7,4.7-11.6,4.7c-5.9,0-10.4-2.1-13.5-6.4c-1.7-2.2-2.9-6.2-3.6-12.1L0,73.6
+		C1.4,82.9,4.8,90,10.3,95.1c5.6,5.1,12.7,7.7,21.3,7.7c9.1,0,16.7-3,22.8-9c6.1-5.9,9.1-13.5,9.1-22.6c0-6.8-1.9-12.6-5.6-17.2
+		C54.2,49.3,48.3,45.3,40.3,42.1z" />
+                      <rect x="121" y="1.9" width="15" height="99.1" />
+                      <path d="M248.7,49.1c4-5.1,6-11.1,6-18.1c0-9-3.2-16.2-9.6-21.7c-5.8-4.9-15.3-7.4-28.4-7.4h-17.5V101h14.9V60.5h2.7l28.3,40.6
+		h18.3l-30.7-42.2C239.4,57.4,244.6,54.1,248.7,49.1z M214.1,47.4V16h5.3c13.8,0,20.7,5.1,20.7,15.2c0,10.8-7.1,16.2-21.2,16.2
+		H214.1z" />
+                      <rect x="300.6" y="85.3" width="14.9" height="15.8" />
+                    </g>
+                  </svg>
+                </div>
+              </span>
+            </div>
+            <div class="menu-toggle d-flex d-xl-block flex-column justify-content-between">
+              <div class="menu-toggle-item">
+
+                <!-- NAVIGATION STARTS -->
+
+                <nav role="navigation" class="navbar nav theme-menu px-0 left-menu">
+                  <ul class="list-unstyled mb-0">
+
+                    <li><a href="/catalog">Каталог</a></li>
+
+                    <li><a href="/lookbook">Lookbook</a></li>
+
+                    <li><a href="/faq">F.A.Q</a></li>
+
+                    <li class="d-xl-none"><a href="/about">О компании</a></li>
+
+                    <li class="d-xl-none"><a href="/contacts">Контакты</a></li>
+
+                    <li class="d-xl-none"><a href="/reviews">Отзывы</a></li>
+
+                  </ul>
+                </nav>
+
+
+                <!-- MOBILE NAV -->
+                <!-- <nav role="navigation" class="navbar nav theme-menu px-0 d-xl-none">
+                  <ul class="d-xl-none flex-md-row list-unstyled mb-0">
+                    <li class="">
+                      <a href="#login" data-toggle="modal" class="sign-model">SIGN IN</a>
+                    </li>
+                  </ul>
+                </nav> -->
+
+
+              </div>
+              <!-- BURGER MENU FOOTER -->
+              <div class="menu-toggle-item d-xl-none">
+                <section class="subscribe">
+                  <div class="theme-heading text-uppercase">Подпишись на обновления</div>
+                  <div class="subscribe-form">
+                    <!-- TODO: setup form -->
+                    <form method="get" id="footer_mailchimp" class="email-form" name="mc-embedded-subscribe-form">
+                      <div class="form-group input p-0 m-0 mx-auto">
+                        <div class="parent input-group">
+                          <input class="form-control py-2 input__field pr-5" autocomplete="off" autocorrect="off"
+                            autocapitalize="off" type="email" name="EMAIL" placeholder="Ваш почтовый адрес">
+                          <div class="input-group-append">
+                            <button class="btn text-uppercase btn-transparent" id="join" type="submit">
+                              ОК<span><svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="13.406" height="22"
+                                  viewBox="0 0 13.406 22">
+                                  <defs>
+                                    <style>
+                                      #arrow .cls-1,
+                                      #arrow .cls-2 {
+                                        fill: none;
+                                        stroke-width: 1px;
+                                        fill-rule: evenodd;
+                                      }
+
+                                      #arrow .cls-1 {
+                                        stroke: #000;
+                                      }
+
+                                      #arrow .cls-2 {
+                                        stroke: #fff;
+                                      }
+                                    </style>
+                                  </defs>
+                                  <path id="Shape_799_copy" data-name="Shape 799 copy" class="cls-1"
+                                    d="M0.946,0.363L11.863,11,0.946,21.632" transform="translate(-0.594)" />
+                                  <path class="cls-2" d="M2.365,0.363L13.282,11,2.365,21.632"
+                                    transform="translate(-0.594)" />
+                                </svg>
+                              </span>
+                            </button>
+                          </div>
+                          <label class="input__label">How can we help?</label>
+                          <span class="input-error">Please fill the field</span>
+                        </div>
+                      </div>
+
+                    </form>
+                    <div id="subscribe-result-mob" class="fade_out_message">
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="menu-overlay d-none"></div>
+          </div>
+          <!-- LOGO -->
+          <div class="col-md-2 col">
+            <div class="logo text-center">
+              <a href="/">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 30"
+                  style="enable-background:new 0 0 100 30;" xml:space="preserve">
+                  <g>
+                    <path d="M1,25.1V6.2h2.7l6,9.5c1.4,2.2,2.5,4.2,3.4,6.1l0.1,0c-0.2-2.5-0.3-4.8-0.3-7.8V6.2h2.3v18.9h-2.5l-6-9.6
+		c-1.3-2.1-2.6-4.3-3.5-6.3l-0.1,0c0.1,2.4,0.2,4.6,0.2,7.8v8.1H1z" />
+                    <path d="M26.1,6.2v18.9h-2.4V6.2H26.1z" />
+                    <path
+                      d="M34.6,6.2H37v9.1h0.1c0.5-0.7,1-1.4,1.5-2l5.8-7.1h3l-6.8,8l7.4,10.9H45l-6.2-9.3L37,17.9v7.2h-2.4V6.2z" />
+                    <path d="M56.4,6.2v18.9h-2.4V6.2H56.4z" />
+                    <path d="M64.5,22.1c1.1,0.7,2.7,1.2,4.4,1.2c2.5,0,3.9-1.3,3.9-3.2c0-1.8-1-2.8-3.6-3.8c-3.1-1.1-5-2.7-5-5.3
+		c0-2.9,2.4-5.1,6.1-5.1c1.9,0,3.3,0.4,4.2,0.9l-0.7,2C73.3,8.5,72,8,70.3,8c-2.6,0-3.6,1.5-3.6,2.8c0,1.8,1.1,2.6,3.8,3.6
+		c3.2,1.2,4.8,2.8,4.8,5.5c0,2.9-2.2,5.4-6.6,5.4c-1.8,0-3.8-0.5-4.8-1.2L64.5,22.1z" />
+                    <path d="M99,15.5c0,6.5-3.9,9.9-8.8,9.9c-5,0-8.5-3.9-8.5-9.6c0-6,3.7-9.9,8.8-9.9C95.6,5.9,99,9.9,99,15.5z M84.3,15.8
+		c0,4,2.2,7.6,6,7.6c3.9,0,6-3.6,6-7.8c0-3.8-2-7.7-6-7.7C86.3,7.9,84.3,11.6,84.3,15.8z" />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-7 col">
+            <nav role="navigation" class="navbar nav theme-menu px-0 right-menu text-right">
+              <ul class="ml-auto list-unstyled">
+                <li class="d-none d-xl-inline"><a href="/about">О компании</a></li>
+
+                <li class="d-none d-xl-inline"><a href="/contacts">Контакты</a></li>
+
+                <li class="d-none d-xl-inline"><a href="/reviews">Отзывы</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- BAG, SEARCH, WISHLIST - maybe need -->
+          <!-- <div class="col-md-7 col text-right">
+            <nav class="navbar nav theme-menu d-inline-block mb-0 right-menu">
+              <ul class="d-flex flex-md-row list-unstyled mb-0">
+                <li class="d-none d-xl-inline"><a href="#" class="search-action"><svg id="search"
+                      xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                      <defs>
+                        <style>
+                          .cls-1,
+                          .cls-2 {
+                            fill: none;
+                            stroke: #000;
+                            stroke-width: 1px;
+                          }
+
+                          .cls-2 {
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <circle class="cls-1" cx="4" cy="4" r="3.563" />
+                      <path class="cls-2" d="M6.345,6.36L9.653,9.645" />
+                    </svg>
+                    Search</a></li>
+
+                <li class="d-xl-none"><a href="#" class="search-action"><svg id="search"
+                      xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                      <defs>
+                        <style>
+                          .cls-1,
+                          .cls-2 {
+                            fill: none;
+                            stroke: #000;
+                            stroke-width: 1px;
+                          }
+
+                          .cls-2 {
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <circle class="cls-1" cx="4" cy="4" r="3.563" />
+                      <path class="cls-2" d="M6.345,6.36L9.653,9.645" />
+                    </svg>
+                  </a></li>
+
+
+                <li class="d-none d-xl-inline signIn">
+                  <a href="#login" data-toggle="modal">SIGN IN</a>
+                </li>
+
+                <li class="d-none d-xl-inline"><a href="#" class="cart-drawer-action">BAG <span>(0)</span></a></li>
+                <li class="d-xl-none"><a href="#" class="cart-drawer-action"><svg id="bag"
+                      xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: none;
+                            stroke: #000;
+                            stroke-width: 1px;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path class="cls-1" d="M0.455,3.45H9.545v8.1H0.455V3.45Z" />
+                      <path class="cls-1"
+                        d="M2.428,6V3.231A2.676,2.676,0,0,1,5,.461,2.676,2.676,0,0,1,7.571,3.231V5.864" />
+                    </svg>
+                  </a></li>
+
+                <li class="wishlist-menu"><a href="#login" data-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="11" height="10" viewBox="0 0 11 10">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: none;
+                            stroke: #000;
+                            stroke-width: 1px;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="Forma_1_copy_2" data-name="Forma 1 copy 2" class="cls-1"
+                        d="M5.5,9.384L4.791,8.7C2.17,6.469.456,4.963,0.456,3.117A2.685,2.685,0,0,1,3.229.445,3.077,3.077,0,0,1,5.5,1.466,3.081,3.081,0,0,1,7.766.445a2.685,2.685,0,0,1,2.772,2.672c0,1.847-1.714,3.352-4.336,5.587Z" />
+                    </svg>
+                  </a></li>
+              </ul>
+            </nav>
+          </div> -->
+        </div>
+      </header>
+
+      <!-- SEARCH FORM -->
+      <!-- <div class="pop-up pop-up--search">
+        <div class="pop-up-wrap">
+          <div class="col-xl-12 offset-xl-2">
+            <div class="pop-up-title d-flex justify-content-center">
+              <form action="/search">
+                <div class="form-group input m-0 mx-auto">
+                  <div class="parent input-group">
+                    <input type="hidden" name="type" value="product">
+                    <input type="text" placeholder="Type to search" name="q"
+                      class="pr-0 form-control input__field input-field-lg">
+                    <input type="submit" class="search-submit">
+                    <div class="close-btn">
+                      <button class="btn btn-transparent pop-up-close"><svg id="x" xmlns="http://www.w3.org/2000/svg"
+                          width="17.875" height="17.875" viewBox="0 0 17.875 17.875">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: #fff;
+                                stroke: #000;
+                                stroke-width: 1px;
+                                fill-rule: evenodd;
+                              }
+                            </style>
+                          </defs>
+                          <path class="cls-1" d="M0.4,0.4L17.6,17.6" transform="translate(-0.063 -0.063)" />
+                          <path id="Shape_907_copy" data-name="Shape 907 copy" class="cls-1"
+                            d="M17.562,0.437L0.438,17.562" transform="translate(-0.063 -0.063)" />
+                        </svg>
+                      </button>
+                    </div>
+                    <label class="input__label">How can we help?</label>
+                    <span class="input-error">Please fill the field</span>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+
+
+            <div class="d-flex related-cat align-items-center">
+
+              <h5 class="my-0">Quick Links:</h5>
+              <ul class="d-flex list-unstyled mb-0 flex-wrap">
+
+                <li><a href="/collections/dresses"><u>Dresses</u></a></li>
+
+                <li><a href="/collections/tops"><u>Tops</u></a></li>
+
+                <li><a href="/collections/tops"><u>Pants</u></a></li>
+
+                <li><a href="/collections/jumpsuits"><u>Jumpsuits</u></a></li>
+
+                <li><a href="/pages/customer-care/#shipping-deliveryWrap"><u>Shipping & Delivery</u></a></li>
+
+                <li><a href="/pages/contact-us"><u>Contact Us</u></a></li>
+
+
+              </ul>
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="pop-up--overlay"></div> -->
+
+    </section>
+
+    <!-- CART SIDE -->
+    <section>
+      <div class="cart-drawer">
+        <div class="cart-drawer-breakup">
+          <div class="cart-drawer-close"><svg id="x" xmlns="http://www.w3.org/2000/svg" width="17.875" height="17.875"
+              viewBox="0 0 17.875 17.875">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    stroke: #000;
+                    stroke-width: 1px;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path class="cls-1" d="M0.4,0.4L17.6,17.6" transform="translate(-0.063 -0.063)" />
+              <path id="Shape_907_copy" data-name="Shape 907 copy" class="cls-1" d="M17.562,0.437L0.438,17.562"
+                transform="translate(-0.063 -0.063)" />
+            </svg>
+          </div>
+          <div class="cart-count">Корзина <span>(0)</span></div>
+          <div class="cart-total">Всего: <span>0</span> ₽</div>
+
+          <div class="cart-checkout">
+            <form action="/cart" method="post">
+              <a href="/cart" class="btn btn-theme btn-lg">Перейти в корзину</a>
+              <button type="submit" name="checkout" class="btn btn-theme btn-lg">Заказать</button>
+            </form>
+          </div>
+        </div>
+        <div class="cart-drawer-list">
+          <div class="row">
+            <div class="col-sm-16">
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+
+  <!-- LOGIN MODAL with footer -->
+  <div class="modal login-modal" tabindex="-1" role="dialog" id="login">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title w-100">Sign in
+            <button type="button" class="btn-transparent btn-cancel p-0 float-right" data-dismiss="modal"><svg
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="icon">
+                <path fill="#444"
+                  d="M15.89 14.696l-4.734-4.734 4.717-4.717c.4-.4.37-1.085-.03-1.485s-1.085-.43-1.485-.03L9.641 8.447 4.97 3.776c-.4-.4-1.085-.37-1.485.03s-.43 1.085-.03 1.485l4.671 4.671-4.688 4.688c-.4.4-.37 1.085.03 1.485s1.085.43 1.485.03l4.688-4.687 4.734 4.734c.4.4 1.085.37 1.485-.03s.43-1.085.03-1.485z" />
+              </svg></button>
+          </h5>
+        </div>
+        <div class="modal-body">
+          <form method="post" action="/account/login" id="customer_login" accept-charset="UTF-8" class="form-label">
+            <input type="hidden" name="form_type" value="customer_login" /><input type="hidden" name="utf8" value="✓" />
+
+            <div class="form-group input ">
+              <input type="hidden" name="checkout_url" value="https://us.sirthelabel.com/pages/contact-us" />
+              <div class="parent">
+                <input type="email" class="form-control input__field " name="customer[email]" id="username"
+                  spellcheck="false" autocomplete="off" autocapitalize="off" autofocus />
+                <label class="input__label">Email</label>
+                <span class="input-error input-error-text"></span>
+              </div>
+            </div>
+
+            <div class="form-group input ">
+              <div class="parent">
+                <input type="password" name="customer[password]" id="CustomerPassword"
+                  class="form-control input__field ">
+                <label class="input__label">Password</label>
+                <span class="input-error">Please fill the field</span>
+              </div>
+            </div>
+
+            <div class="text-center form-btn">
+              <button type="submit" class="btn btn-theme btn-lg">Sign In</button>
+            </div>
+
+
+
+
+
+            <a href="#forgotPassword" data-toggle="modal" data-dismiss="modal" class="form-link">Forgot your
+              password?</a>
+
+
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p>New customer? Sign up to receieve the following benefits:</p>
+          <div class="d-flex justify-content-between align-items-end">
+            <ul class="list-bullet login-slogan">
+              <li>Complete checkout more quickly</li>
+              <li>Review order information and tracking</li>
+              <li>Save your favourite items</li>
+            </ul>
+            <h4 class="text-right modal-signUp"><a href="#signup" data-toggle="modal" data-dismiss="modal">Sign up</a>
+            </h4>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CREATE ACC MODAL with form -->
+  <div class="modal" tabindex="-1" role="dialog" id="signup">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title w-100">Create Account
+            <button type="button" class="btn-transparent btn-cancel p-0 float-right" data-dismiss="modal"><svg
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="icon">
+                <path fill="#444"
+                  d="M15.89 14.696l-4.734-4.734 4.717-4.717c.4-.4.37-1.085-.03-1.485s-1.085-.43-1.485-.03L9.641 8.447 4.97 3.776c-.4-.4-1.085-.37-1.485.03s-.43 1.085-.03 1.485l4.671 4.671-4.688 4.688c-.4.4-.37 1.085.03 1.485s1.085.43 1.485.03l4.688-4.687 4.734 4.734c.4.4 1.085.37 1.485-.03s.43-1.085.03-1.485z" />
+              </svg></button>
+          </h5>
+        </div>
+        <div class="modal-body">
+          <form method="post" action="/account" id="create_customer" accept-charset="UTF-8" class="form-label"><input
+              type="hidden" name="form_type" value="create_customer" /><input type="hidden" name="utf8" value="✓" />
+
+            <div class="row">
+              <div class="col-sm-16">
+                <div class="form-group input">
+                  <div class="parent">
+                    <input type="text" name="customer[first_name]" class="form-control input__field" id="FirstName"
+                      autofocus>
+                    <label class="input__label">First Name</label>
+                    <span class="input-error input-error-text">Please fill the field</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-16">
+                <div class="form-group input">
+                  <div class="parent">
+                    <input type="text" name="customer[last_name]" id="LastName" class="form-control input__field">
+                    <label class="input__label">Last Name</label>
+                    <span class="input-error input-error-text">Please fill the field</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-16">
+                <div class="form-group input ">
+                  <div class="parent">
+                    <input type="email" name="customer[email]" id="Email" class="form-control input__field" value=""
+                      spellcheck="false" autocomplete="off" autocapitalize="off">
+                    <label class="input__label">Email</label>
+                    <span class="input-error">Please fill the field</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-16">
+                <div class="form-group input ">
+                  <div class="parent">
+                    <input type="password" name="customer[password]" id="CreatePassword"
+                      class="form-control input__field">
+                    <label class="input__label">Password</label>
+                    <span class="input-error">Please fill the field</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accepts_marketing">
+              <input type="hidden" name="customer[accepts_marketing]" value="" />
+              <input type="checkbox" name="customer[accepts_marketing]" checked="checked" />
+              <p>Sign me up to reveive updates on new arrivals, events, promotions and much more! </p>
+            </div>
+            <div class="form-terms login-slogan">
+              <p>By signing up you agree to SIR <a href="/pages/customer-care#legal-policiesWrap">Terms of Service</a>
+                and <a href="/pages/customer-care#legal-policiesWrap">Privacy Policy</a></p>
+            </div>
+            <div class="text-center form-btn">
+              <button type="submit" value="" class="btn btn-theme">Create</button>
+            </div>
+            <a href="#login" data-toggle="modal" data-dismiss="modal" class="form-link">I have an account</a>
+
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESET PASSWORD MODAL -->
+  <div class="modal" tabindex="-1" role="dialog" id="forgotPassword">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title w-100">Reset your password
+            <button type="button" class="btn-transparent btn-cancel p-0 float-right" data-dismiss="modal"><svg
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="icon">
+                <path fill="#444"
+                  d="M15.89 14.696l-4.734-4.734 4.717-4.717c.4-.4.37-1.085-.03-1.485s-1.085-.43-1.485-.03L9.641 8.447 4.97 3.776c-.4-.4-1.085-.37-1.485.03s-.43 1.085-.03 1.485l4.671 4.671-4.688 4.688c-.4.4-.37 1.085.03 1.485s1.085.43 1.485.03l4.688-4.687 4.734 4.734c.4.4 1.085.37 1.485-.03s.43-1.085.03-1.485z" />
+              </svg></button>
+          </h5>
+        </div>
+
+        <div class="modal-body">
+          <div>
+            <form method="post" action="/account/recover" accept-charset="UTF-8" class="form-label"><input type="hidden"
+                name="form_type" value="recover_customer_password" /><input type="hidden" name="utf8" value="✓" />
+
+
+
+              <div class="form-group input input__filled ">
+                <div class="parent">
+                  <input type="email" name="email" id="RecoverEmail" class="active form-control input__field"
+                    spellcheck="false" autocomplete="off" autocapitalize="off" autofocus>
+                  <label class="input__label" for="RecoverEmail">Your email address</label>
+                  <span class="input-error input-error-text">Please fill form</span>
+                </div>
+              </div>
+              <div class="text-center form-btn">
+                <button type="submit" class="btn btn-theme btn-lg">Submit</button>
+              </div>
+            </form>
+            <a href="#login" data-toggle="modal" data-dismiss="modal" class="form-link">I have an account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- PAGE START -->
+  <main role="main" id="MainContent">
+    <div id="shopify-section-customer-care" class="shopify-section">
+      <section class="customer-care">
+        <div class="container-fluid">
+
+          <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-lg-3 offset-lg-1">
+              <div class="cc-sidebar">
+                <div class="horizontal-menu d-none d-lg-block">
+                  <div class="horizontal-menu-title filter-head">КАТЕГОРИИ</div>
+                  <!-- TODO: change categories -->
+                  <ul class="horizontal-menu-list">
+
+                    <li><a href="#paymentWrap">ОПЛАТА</a></li>
+
+                    <li><a href="#orderingWrap">КАК ЗАКАЗАТЬ</a></li>
+
+                    <li><a href="#shipping-deliveryWrap">ДОСТАВКА</a></li>
+
+                    <li><a href="#returns-exchangesWrap">ВОЗВРАТ</a></li>
+
+                    <li><a href="#faqWrap">ВОПРОСЫ</a></li>
+
+                  </ul>
+                </div>
+                <div class="mob-cc-categories customer-care-item-list d-lg-none">
+                  <div class="accordion " id="cc-categories">
+                    <div class="accordion-item">
+                      <div class="accordion-detail-wrap collapse" id="cc-categories" data-parent="#most-popular">
+                        <div class="accordion-detail">
+                          <div class="horizontal-menu">
+                            <ul class="horizontal-menu-list">
+
+                              <li><a href="#paymentWrap">ОПЛАТА</a></li>
+
+                              <li><a href="#orderingWrap">КАК ЗАКАЗАТЬ</a></li>
+
+                              <li><a href="#shipping-deliveryWrap">ДОСТАВКА</a></li>
+
+                              <li><a href="#returns-exchangesWrap">ВОЗВРАТ</a></li>
+
+                              <li><a href="#faqWrap">ВОПРОСЫ</a></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-title">
+                        <a data-toggle="collapse" href="#cc-categories"><strong><span class="contract"><svg id="_"
+                                data-name="+" xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #feffef;
+                                      stroke: #000;
+                                      stroke-width: 1px;
+                                      fill-rule: evenodd;
+                                    }
+                                  </style>
+                                </defs>
+                                <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                                <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                              </svg>
+                            </span><span class="expanded d-none"><svg id="_-" data-name="-"
+                                xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #feffef;
+                                      stroke: #000;
+                                      stroke-width: 1px;
+                                      fill-rule: evenodd;
+                                    }
+                                  </style>
+                                </defs>
+                                <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                                  transform="translate(0 -3)" />
+                              </svg>
+                            </span></strong>
+                          categories</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="horizontal-menu">
+                  <div class="horizontal-menu-contact">
+                    <div class="horizontal-menu-contact-title ">Нужна помощь? Свяжись с нами</div>
+                    <div class="py-lg-0">
+                      <ul class="list-unstyled mb-0">
+
+
+                        <li><a href="mailto:info@nikiso.ru" class="d-inline-flex align-items-center "><svg
+                              id="email_copy" data-name="email copy" xmlns="http://www.w3.org/2000/svg" width="14"
+                              height="10" viewBox="0 0 14 10">
+                              <defs>
+                                <style>
+                                  .cls-1 {
+                                    fill: none;
+                                    stroke: #000;
+                                    stroke-width: 1px;
+                                    fill-rule: evenodd;
+                                  }
+                                </style>
+                              </defs>
+                              <path class="cls-1" d="M0.5,0.455h13V9.545H0.5V0.455Z" />
+                              <path class="cls-1" d="M0.384,0.423L7,6.241l6.616-5.817" />
+                            </svg>
+                            <span>info@nikiso.ru</span></a></li>
+                        <li><a href="tel:+61 2 9191 0245" class="d-inline-flex align-items-center"><svg
+                              xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                              <defs>
+                                <style>
+                                  .cls-1 {
+                                    fill: none;
+                                    stroke: #000;
+                                    stroke-width: 1px;
+                                    fill-rule: evenodd;
+                                  }
+                                </style>
+                              </defs>
+                              <path class="cls-1"
+                                d="M13.494,10.49a0.547,0.547,0,0,1-.169.483l-2.219,2.213a0.926,0.926,0,0,1-.284.207,1.173,1.173,0,0,1-.343.108l-0.072.006c-0.04,0-.092.006-0.157,0.006a5.294,5.294,0,0,1-1.992-.465,10.481,10.481,0,0,1-1.679-.923,12.606,12.606,0,0,1-2-1.69,13.388,13.388,0,0,1-1.4-1.595,11.411,11.411,0,0,1-.89-1.406,7.58,7.58,0,0,1-.506-1.172,6.275,6.275,0,0,1-.229-0.9,2.953,2.953,0,0,1-.048-0.6c0.008-.144.011-0.226,0.011-0.241a1.169,1.169,0,0,1,.109-0.344,0.9,0.9,0,0,1,.2-0.284l2.22-2.225A0.527,0.527,0,0,1,4.442,1.5a0.448,0.448,0,0,1,.277.091,0.87,0.87,0,0,1,.2.223L6.211,4.26a0.587,0.587,0,0,1,.059.423,0.737,0.737,0,0,1-.2.387l-0.59.591a0.183,0.183,0,0,0-.041.079,0.294,0.294,0,0,0-.018.091,2.143,2.143,0,0,0,.216.58,5.432,5.432,0,0,0,.444.707,8,8,0,0,0,.855.959A8.051,8.051,0,0,0,7.9,8.94a5.711,5.711,0,0,0,.7.452,1.9,1.9,0,0,0,.433.175L9.185,9.6a0.272,0.272,0,0,0,.077-0.017,0.2,0.2,0,0,0,.079-0.042l0.686-.7a0.735,0.735,0,0,1,.506-0.193,0.63,0.63,0,0,1,.326.073H10.87l2.324,1.375a0.611,0.611,0,0,1,.3.4h0Zm0,0"
+                                transform="translate(-1 -1)" />
+                            </svg>
+                            <span>+7 999 999 99 99</span></a></li>
+                      </ul>
+                      <address>
+                        <p>
+                          Мы находимся в Москве, Россия
+                          <span class="d-block">Время работы:</span>
+                          ПН - ПТ | 9 - 18
+
+                        </p>
+                      </address>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9 offset-lg-2">
+              <section class="customer-care-main">
+                <div class="customer-care-header">
+                  <h1 class="customer-care-title">Доставка</h1>
+                </div>
+
+
+                <div class="customer-care-item" id="paymentWrap">
+                  <div class="customer-care-item-title filter-head">ОПЛАТА</div>
+
+                  <div class="customer-care-item-list">
+                    <div class="accordion accordion-lg" id="payment">
+
+                      <!-- Start Item -->
+                      <div class="accordion-item">
+                        <div class="accordion-title">
+                          <a data-toggle="collapse" href="#item1"><strong><span class="contract"><svg id="_"
+                                  data-name="+" xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                                  viewBox="0 0 7 7">
+                                  <defs>
+                                    <style>
+                                      .cls-1 {
+                                        fill: #feffef;
+                                        stroke: #000;
+                                        stroke-width: 1px;
+                                        fill-rule: evenodd;
+                                      }
+                                    </style>
+                                  </defs>
+                                  <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                                  <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                                </svg>
+                              </span><span class="expanded d-none"><svg id="_-" data-name="-"
+                                  xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1">
+                                  <defs>
+                                    <style>
+                                      .cls-1 {
+                                        fill: #feffef;
+                                        stroke: #000;
+                                        stroke-width: 1px;
+                                        fill-rule: evenodd;
+                                      }
+                                    </style>
+                                  </defs>
+                                  <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                                    transform="translate(0 -3)" />
+                                </svg>
+                              </span></strong>
+                            SAMPLE QUESTION</a>
+                        </div>
+                        <div class="accordion-detail-wrap collapse" id="item1" data-parent="#payment">
+                          <div class="accordion-detail">
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium amet itaque esse,
+                              tenetur sint beatae sapiente architecto adipisci incidunt ea molestiae saepe. Eum, atque
+                              nesciunt quibusdam ea eaque laborum?
+                            </p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- End Item-->
+
+                      <!-- Start Item -->
+                      <div class="accordion-item">
+                        <div class="accordion-title">
+                          <a data-toggle="collapse" href="#item2"><strong><span class="contract"><svg id="_"
+                                  data-name="+" xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                                  viewBox="0 0 7 7">
+                                  <defs>
+                                    <style>
+                                      .cls-1 {
+                                        fill: #feffef;
+                                        stroke: #000;
+                                        stroke-width: 1px;
+                                        fill-rule: evenodd;
+                                      }
+                                    </style>
+                                  </defs>
+                                  <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                                  <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                                </svg>
+                              </span><span class="expanded d-none"><svg id="_-" data-name="-"
+                                  xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1">
+                                  <defs>
+                                    <style>
+                                      .cls-1 {
+                                        fill: #feffef;
+                                        stroke: #000;
+                                        stroke-width: 1px;
+                                        fill-rule: evenodd;
+                                      }
+                                    </style>
+                                  </defs>
+                                  <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                                    transform="translate(0 -3)" />
+                                </svg>
+                              </span></strong>
+                            SAMPLE QUESTION</a>
+                        </div>
+                        <div class="accordion-detail-wrap collapse" id="item2" data-parent="#payment">
+                          <div class="accordion-detail">
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium amet itaque esse,
+                              tenetur sint beatae sapiente architecto adipisci incidunt ea molestiae saepe. Eum, atque
+                              nesciunt quibusdam ea eaque laborum?
+                            </p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- End Item-->
+
+                      <!-- Start Item -->
+                      <div class="accordion-item">
+                        <div class="accordion-title">
+                          <a data-toggle="collapse" href="#item3"><strong><span class="contract"><svg id="_"
+                                  data-name="+" xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                                  viewBox="0 0 7 7">
+                                  <defs>
+                                    <style>
+                                      .cls-1 {
+                                        fill: #feffef;
+                                        stroke: #000;
+                                        stroke-width: 1px;
+                                        fill-rule: evenodd;
+                                      }
+                                    </style>
+                                  </defs>
+                                  <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                                  <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                                </svg>
+                              </span><span class="expanded d-none"><svg id="_-" data-name="-"
+                                  xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1">
+                                  <defs>
+                                    <style>
+                                      .cls-1 {
+                                        fill: #feffef;
+                                        stroke: #000;
+                                        stroke-width: 1px;
+                                        fill-rule: evenodd;
+                                      }
+                                    </style>
+                                  </defs>
+                                  <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                                    transform="translate(0 -3)" />
+                                </svg>
+                              </span></strong>
+                            SAMPLE QUESTION</a>
+                        </div>
+                        <div class="accordion-detail-wrap collapse" id="item3" data-parent="#payment">
+                          <div class="accordion-detail">
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium amet itaque esse,
+                              tenetur sint beatae sapiente architecto adipisci incidunt ea molestiae saepe. Eum, atque
+                              nesciunt quibusdam ea eaque laborum?
+                            </p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- End Item-->
+
+                      <div class="customer-care-item" id="paymentWrap">
+
+                        <div class="customer-care-item-title filter-head">КАК&nbsp;ЗАКАЗАТЬ</div>
+
+                      </div>
+
+                      <div class="customer-care-item" id="paymentWrap">
+
+                        <div class="customer-care-item-title filter-head">ДОСТАВКА</div>
+
+                      </div>
+
+                      <div class="customer-care-item" id="paymentWrap">
+
+                        <div class="customer-care-item-title filter-head">ВОЗВРАТ</div>
+
+                      </div>
+
+                      <div class="customer-care-item" id="paymentWrap">
+
+                        <div class="customer-care-item-title filter-head">ВОПРОСЫ</div>
+
+                      </div>
+
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <!-- PAGE END -->
+
+
+  <div id="shopify-section-footer" class="shopify-section">
+    <footer>
+      <div class="col-lg-14 offset-lg-1">
+        <section class="subscribe">
+          <div class="theme-heading text-center" style="display:none">
+            <div class="text-uppercase">Подпишись на обновления</div>
+          </div>
+          <div class="subscribe-form" style="display:none">
+            <form class="email-form" method="get" id="footer_mailchimp2" name="mc-embedded-subscribe-form">
+              <div class="form-group input p-0 m-0 mx-auto">
+                <div class="parent input-group">
+                  <input class="form-control py-2 input__field pr-5" type="email" class="email" id="mce-EMAIL"
+                    name="EMAIL" placeholder="Ваш почтовый адрес">
+                  <div class="input-group-append">
+                    <button class="btn text-uppercase btn-transparent" type="submit">
+                      <span class="d-sm-none">ОК</span>
+                      <span class="d-none d-sm-inline">Подписаться</span>
+                      <span><svg xmlns="http://www.w3.org/2000/svg" width="6" height="11" viewBox="0 0 6 11">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: none;
+                                stroke: #000;
+                                stroke-width: 1px;
+                                fill-rule: evenodd;
+                              }
+                            </style>
+                          </defs>
+                          <path class="cls-1" d="M0.356,0.32L5.317,5.5l-4.96,5.176" />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                  <label class="input__label">How can we help?</label>
+                  <span class="input-error">Please fill the field</span>
+                </div>
+              </div>
+            </form>
+            <div id="subscribe-result">
+            </div>
+
+          </div>
+        </section>
+        <section>
+          <div class="row accordion-theme" id="footer_accordion" class="wrapping-up">
+
+            <!-- FOOTER: mobile accordion -->
+
+            <!-- CUSTOMER CARE (РАЗДЕЛЫ) -->
+            <div class="col-lg-4">
+              <div class="footer-list">
+                <div class="footer-list__title " data-parent="#footer_accordion" data-target="#customer"><strong
+                    class="d-lg-none accordion-toggle-icon"><span class="contract"><svg id="_" data-name="+"
+                        xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #feffef;
+                              stroke: #000;
+                              stroke-width: 1px;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                        <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                      </svg>
+                    </span><span class="expanded d-none"><svg id="_-" data-name="-" xmlns="http://www.w3.org/2000/svg"
+                        width="7" height="1" viewBox="0 0 7 1">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #feffef;
+                              stroke: #000;
+                              stroke-width: 1px;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                          transform="translate(0 -3)" />
+                      </svg>
+                    </span></strong>РАЗДЕЛЫ</div>
+                <div class="footer-list__item theme-menu collapse" id="customer">
+                  <ul class="list-unstyled">
+
+                    <li><a href="/catalog">КАТАЛОГ</a></li>
+
+                    <li><a href="/lookbook">LOOKBOOK</a></li>
+
+                    <li><a href="/about">О&nbsp;КОМПАНИИ</a></li>
+
+                    <li><a href="/reviews">ОТЗЫВЫ</a></li>
+
+                    <li><a href="/faq">ДОСТАВКА</a></li>
+                    <!-- <li><a data-target="#make_returns" href="#" data-toggle="modal">Make a return</a></li> -->
+
+                    <li><a href="/contacts">КОНТАКТЫ</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- INFO (ИНФОРМАЦИЯ) -->
+            <div class="col-lg-4">
+              <div class="footer-list">
+                <div class="footer-list__title" data-parent="#footer_accordion" data-target="#info"><strong
+                    class="d-lg-none accordion-toggle-icon"><span class="contract"><svg id="_" data-name="+"
+                        xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #feffef;
+                              stroke: #000;
+                              stroke-width: 1px;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                        <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                      </svg>
+                    </span><span class="expanded d-none"><svg id="_-" data-name="-" xmlns="http://www.w3.org/2000/svg"
+                        width="7" height="1" viewBox="0 0 7 1">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #feffef;
+                              stroke: #000;
+                              stroke-width: 1px;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                          transform="translate(0 -3)" />
+                      </svg>
+                    </span></strong>ИНФОРМАЦИЯ</div>
+                <div class="footer-list__item theme-menu collapse" id="info">
+                  <ul class="list-unstyled">
+
+                    <li><a href="/politics">ПОЛИТИКА&nbsp;КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+
+                    <li><a href="/requisites">РЕКВИЗИТЫ</a></li>
+
+                    <li><a href="/vacancy">ВАКАНСИИ</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- FOLLOW US (СМОТРИ НАС) -->
+            <div class="col-lg-4">
+              <div class="footer-list">
+                <div class="footer-list__title" data-parent="#footer_accordion" data-target="#follow_us"><strong
+                    class="d-lg-none accordion-toggle-icon"><span class="contract"><svg id="_" data-name="+"
+                        xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #feffef;
+                              stroke: #000;
+                              stroke-width: 1px;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                        <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                      </svg>
+                    </span><span class="expanded d-none"><svg id="_-" data-name="-" xmlns="http://www.w3.org/2000/svg"
+                        width="7" height="1" viewBox="0 0 7 1">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #feffef;
+                              stroke: #000;
+                              stroke-width: 1px;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                          transform="translate(0 -3)" />
+                      </svg>
+                    </span></strong>СМОТРИ&nbsp;НАС</div>
+                <div class="footer-list__item theme-menu collapse" id="follow_us">
+                  <ul class="list-unstyled text-uppercase">
+
+                    <li><a href="https://www.facebook.com/" target="_blank" class="d-flex align-items-center"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill-rule: evenodd;
+                              }
+                            </style>
+                          </defs>
+                          <path id="facebok" class="cls-1"
+                            d="M6.733,0L5.055,0a2.841,2.841,0,0,0-3.1,2.953V4.311H0.261A0.255,0.255,0,0,0,0,4.556V6.528a0.255,0.255,0,0,0,.264.246H1.95v4.978A0.254,0.254,0,0,0,2.214,12h2.2a0.255,0.255,0,0,0,.264-0.245V6.773H6.653a0.256,0.256,0,0,0,.265-0.246V4.556A0.238,0.238,0,0,0,6.84,4.381a0.28,0.28,0,0,0-.187-0.07H4.68V3.157C4.68,2.6,4.823,2.32,5.6,2.32H6.733A0.254,0.254,0,0,0,7,2.075V0.243A0.254,0.254,0,0,0,6.733,0Z" />
+                        </svg>
+                        <span>facebook</span></a></li>
+
+
+                    <li><a href="https://www.pinterest.com.au/" target="_blank" class="d-flex align-items-center"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill-rule: evenodd;
+                              }
+                            </style>
+                          </defs>
+                          <path class="cls-1"
+                            d="M11.2,2.988A5.974,5.974,0,0,0,9.012.8,5.867,5.867,0,0,0,6,0,5.867,5.867,0,0,0,2.989.8,5.97,5.97,0,0,0,.8,2.988,5.87,5.87,0,0,0,0,6a5.818,5.818,0,0,0,.992,3.3,5.985,5.985,0,0,0,2.6,2.2,5.191,5.191,0,0,1,.1-1.383L4.469,6.851a2.084,2.084,0,0,1-.2-0.953,1.792,1.792,0,0,1,.336-1.11,1,1,0,0,1,.82-0.445,0.733,0.733,0,0,1,.6.258,0.988,0.988,0,0,1,.211.648,2.428,2.428,0,0,1-.09.59q-0.09.348-.234,0.8t-0.207.73a0.887,0.887,0,0,0,.179.817,0.956,0.956,0,0,0,.766.34A1.572,1.572,0,0,0,8.028,7.6a4.461,4.461,0,0,0,.535-2.258A2.216,2.216,0,0,0,7.9,3.68a2.533,2.533,0,0,0-1.84-.64A2.844,2.844,0,0,0,3.109,5.914a1.778,1.778,0,0,0,.4,1.18,0.358,0.358,0,0,1,.086.336c-0.011.031-.031,0.109-0.063,0.234s-0.052.205-.062,0.242a0.2,0.2,0,0,1-.3.156A1.762,1.762,0,0,1,2.258,7.2a3.125,3.125,0,0,1-.313-1.43,3.413,3.413,0,0,1,.168-1.047,3.57,3.57,0,0,1,.523-1.011,4.088,4.088,0,0,1,.852-0.863,4,4,0,0,1,1.207-.6,5.017,5.017,0,0,1,1.532-.227,4.023,4.023,0,0,1,1.992.492A3.517,3.517,0,0,1,9.567,3.781a3.216,3.216,0,0,1,.465,1.672,5.25,5.25,0,0,1-.406,2.109A3.461,3.461,0,0,1,8.477,9.035a2.813,2.813,0,0,1-1.688.535A1.851,1.851,0,0,1,5.9,9.348a1.3,1.3,0,0,1-.57-0.527Q4.976,10.2,4.906,10.469A4.819,4.819,0,0,1,4.3,11.75a5.99,5.99,0,0,0,6.9-2.738A5.871,5.871,0,0,0,12,6a5.872,5.872,0,0,0-.8-3.012h0Zm0,0" />
+                        </svg>
+                        <span>Pinterest</span></a></li>
+
+
+                    <li><a href="https://www.instagram.com/" target="_blank" class="d-flex align-items-center"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill-rule: evenodd;
+                              }
+                            </style>
+                          </defs>
+                          <path class="cls-1"
+                            d="M8.25,0H3.75A3.75,3.75,0,0,0,0,3.75v4.5A3.75,3.75,0,0,0,3.75,12h4.5A3.75,3.75,0,0,0,12,8.25V3.75A3.75,3.75,0,0,0,8.25,0Zm2.625,8.25A2.628,2.628,0,0,1,8.25,10.875H3.75A2.628,2.628,0,0,1,1.125,8.25V3.75A2.628,2.628,0,0,1,3.75,1.125h4.5A2.628,2.628,0,0,1,10.875,3.75v4.5ZM6,3A3,3,0,1,0,9,6,3,3,0,0,0,6,3ZM6,7.875A1.875,1.875,0,1,1,7.875,6,1.878,1.878,0,0,1,6,7.875Zm3.225-5.5a0.4,0.4,0,1,1-.4.4A0.4,0.4,0,0,1,9.225,2.375Z" />
+                        </svg>
+                        <span>Instagram</span></a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer-list footer-contact my-lg-0">
+                <div class="footer-list__item theme-menu py-lg-0">
+                  <ul class="list-unstyled text-center mb-0">
+
+
+                    <li><a href="mailto:info@nikiso.ru" class="d-inline-flex align-items-center"><svg id="email_copy"
+                          data-name="email copy" xmlns="http://www.w3.org/2000/svg" width="14" height="10"
+                          viewBox="0 0 14 10">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: none;
+                                stroke: #000;
+                                stroke-width: 1px;
+                                fill-rule: evenodd;
+                              }
+                            </style>
+                          </defs>
+                          <path class="cls-1" d="M0.5,0.455h13V9.545H0.5V0.455Z" />
+                          <path class="cls-1" d="M0.384,0.423L7,6.241l6.616-5.817" />
+                        </svg>
+                        <span>info@nikiso.ru</span></a></li>
+
+
+                    <li><a href="tel:+61291910245" class="d-inline-flex align-items-center"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: none;
+                                stroke: #000;
+                                stroke-width: 1px;
+                                fill-rule: evenodd;
+                              }
+                            </style>
+                          </defs>
+                          <path class="cls-1"
+                            d="M13.494,10.49a0.547,0.547,0,0,1-.169.483l-2.219,2.213a0.926,0.926,0,0,1-.284.207,1.173,1.173,0,0,1-.343.108l-0.072.006c-0.04,0-.092.006-0.157,0.006a5.294,5.294,0,0,1-1.992-.465,10.481,10.481,0,0,1-1.679-.923,12.606,12.606,0,0,1-2-1.69,13.388,13.388,0,0,1-1.4-1.595,11.411,11.411,0,0,1-.89-1.406,7.58,7.58,0,0,1-.506-1.172,6.275,6.275,0,0,1-.229-0.9,2.953,2.953,0,0,1-.048-0.6c0.008-.144.011-0.226,0.011-0.241a1.169,1.169,0,0,1,.109-0.344,0.9,0.9,0,0,1,.2-0.284l2.22-2.225A0.527,0.527,0,0,1,4.442,1.5a0.448,0.448,0,0,1,.277.091,0.87,0.87,0,0,1,.2.223L6.211,4.26a0.587,0.587,0,0,1,.059.423,0.737,0.737,0,0,1-.2.387l-0.59.591a0.183,0.183,0,0,0-.041.079,0.294,0.294,0,0,0-.018.091,2.143,2.143,0,0,0,.216.58,5.432,5.432,0,0,0,.444.707,8,8,0,0,0,.855.959A8.051,8.051,0,0,0,7.9,8.94a5.711,5.711,0,0,0,.7.452,1.9,1.9,0,0,0,.433.175L9.185,9.6a0.272,0.272,0,0,0,.077-0.017,0.2,0.2,0,0,0,.079-0.042l0.686-.7a0.735,0.735,0,0,1,.506-0.193,0.63,0.63,0,0,1,.326.073H10.87l2.324,1.375a0.611,0.611,0,0,1,.3.4h0Zm0,0"
+                            transform="translate(-1 -1)" />
+                        </svg>
+                        <span>+7 999 999 99 99</span></a></li>
+
+                  </ul>
+                  <address>
+                    <p>Мы находимся в Москве, Россия </p>
+                    <p><span class="d-block">Время работы:</span>
+                      ПН - ПТ | 9 - 18 </p>
+                  </address>
+                  <!-- SHIPPING THING -->
+                  <!-- <div class="shipping-to">
+                        <p><a href="/pages/listing-countries" class="theme-font">shipping : <span></span></a><svg
+                            xmlns="http://www.w3.org/2000/svg" width="8.875" height="4.813">
+                            <path id="Shape_2_copy_2" data-name="Shape 2 copy 2" class="cls-1" fill="#6c757d"
+                              d="M.4.429L4.5 4.2 8.6.431" transform="translate(-.063 -.063)" /></svg>
+                        </p>
+                      </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <section>
+      </div>
+  </div>
+
+  </footer>
+
+  <div class="modal" tabindex="-1" role="dialog" id="shop_the_look" data-backdrop="false">
+    <div class="modal-dialog shop_the_look" role="document">
+      <div class="modal-content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-3">
+              <div class="modal-header d-flex justify-content-between align-items-center">
+                <h5 class="modal-title">Shop the look</h5>
+                <div><a href="#" data-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      class="icon">
+                      <path fill="#444"
+                        d="M15.89 14.696l-4.734-4.734 4.717-4.717c.4-.4.37-1.085-.03-1.485s-1.085-.43-1.485-.03L9.641 8.447 4.97 3.776c-.4-.4-1.085-.37-1.485.03s-.43 1.085-.03 1.485l4.671 4.671-4.688 4.688c-.4.4-.37 1.085.03 1.485s1.085.43 1.485.03l4.688-4.687 4.734 4.734c.4.4 1.085.37 1.485-.03s.43-1.085.03-1.485z" />
+                    </svg></a></div>
+              </div>
+              <div class="modal-body m-0 p-0 row pb-5 mb-5 shop_the_look_product">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- SUBSCRIBE POPUP -->
+  <!-- <div class="modal subscribe-popUp" tabindex="-1" role="dialog" id="autoSignUp">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title">GET 10% OFF</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                <p>Sign-up to receive 10% off your first purchase as well as the latest updates on new
+                  arrivals,&nbsp;exclusive promotions and events.</p>
+              </p>
+              <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                class="validate" target="_blank" novalidate>
+                <div class="form-group input">
+                  <div class="parent">
+                    <input type="email" id="mc-email" class="form-control input__field required" name="EMAIL" value=""
+                      placeholder="Your email address" />
+                    <label class="input__label">Your email address</label>
+                    <span class="input-error">Please fill the field</span>
+                  </div>
+                </div>
+                <div class="form-group input">
+                  <div class="parent">
+                    <select name="COUNTRY" class="form-control input__field required" id="mce-COUNTRY" required>
+                      <option disabled selected value="">Select your country</option>
+    
+                      <option value="Afghanistan">Afghanistan</option>
+    
+                      <option value="Åland Islands">Åland Islands</option>
+    
+                      <option value="Albania">Albania</option>
+    
+                      <option value="Algeria">Algeria</option>
+    
+                      <option value="American Samoa">American Samoa</option>
+    
+                      <option value="Andorra">Andorra</option>
+    
+                      <option value="Angola">Angola</option>
+    
+                      <option value="Anguilla">Anguilla</option>
+    
+                      <option value="Antarctica">Antarctica</option>
+    
+                      <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+    
+                      <option value="Argentina">Argentina</option>
+    
+                      <option value="Armenia">Armenia</option>
+    
+                      <option value="Aruba">Aruba</option>
+    
+                      <option value="Australia">Australia</option>
+    
+                      <option value="Austria">Austria</option>
+    
+                      <option value="Azerbaijan">Azerbaijan</option>
+    
+                      <option value="Bahamas">Bahamas</option>
+    
+                      <option value="Bahrain">Bahrain</option>
+    
+                      <option value="Bangladesh">Bangladesh</option>
+    
+                      <option value="Barbados">Barbados</option>
+    
+                      <option value="Belarus">Belarus</option>
+    
+                      <option value="Belgium">Belgium</option>
+    
+                      <option value="Belize">Belize</option>
+    
+                      <option value="Benin">Benin</option>
+    
+                      <option value="Bermuda">Bermuda</option>
+    
+                      <option value="Bhutan">Bhutan</option>
+    
+                      <option value="Bolivia (Plurinational State of)">Bolivia (Plurinational State of)</option>
+    
+                      <option value="Bonaire">Bonaire</option>
+    
+                      <option value=" Sint Eustatius and Saba"> Sint Eustatius and Saba</option>
+    
+                      <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+    
+                      <option value="Botswana">Botswana</option>
+    
+                      <option value="Bouvet Island">Bouvet Island</option>
+    
+                      <option value="Brazil">Brazil</option>
+    
+                      <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+    
+                      <option value="Brunei Darussalam">Brunei Darussalam</option>
+    
+                      <option value="Bulgaria">Bulgaria</option>
+    
+                      <option value="Burkina Faso">Burkina Faso</option>
+    
+                      <option value="Burundi">Burundi</option>
+    
+                      <option value="Cabo Verde">Cabo Verde</option>
+    
+                      <option value="Cambodia">Cambodia</option>
+    
+                      <option value="Cameroon">Cameroon</option>
+    
+                      <option value="Canada">Canada</option>
+    
+                      <option value="Cayman Islands">Cayman Islands</option>
+    
+                      <option value="Central African Republic">Central African Republic</option>
+    
+                      <option value="Chad">Chad</option>
+    
+                      <option value="Chile">Chile</option>
+    
+                      <option value="China">China</option>
+    
+                      <option value="Christmas Island">Christmas Island</option>
+    
+                      <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+    
+                      <option value="Colombia">Colombia</option>
+    
+                      <option value="Comoros">Comoros</option>
+    
+                      <option value="Congo">Congo</option>
+    
+                      <option value="Congo (Democratic Republic of the)">Congo (Democratic Republic of the)</option>
+    
+                      <option value="Cook Islands">Cook Islands</option>
+    
+                      <option value="Costa Rica">Costa Rica</option>
+    
+                      <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+    
+                      <option value="Croatia">Croatia</option>
+    
+                      <option value="Cuba">Cuba</option>
+    
+                      <option value="Curaçao">Curaçao</option>
+    
+                      <option value="Cyprus">Cyprus</option>
+    
+                      <option value="Czechia">Czechia</option>
+    
+                      <option value="Denmark">Denmark</option>
+    
+                      <option value="Djibouti">Djibouti</option>
+    
+                      <option value="Dominica">Dominica</option>
+    
+                      <option value="Dominican Republic">Dominican Republic</option>
+    
+                      <option value="Ecuador">Ecuador</option>
+    
+                      <option value="Egypt">Egypt</option>
+    
+                      <option value="El Salvador">El Salvador</option>
+    
+                      <option value="Equatorial Guinea">Equatorial Guinea</option>
+    
+                      <option value="Eritrea">Eritrea</option>
+    
+                      <option value="Estonia">Estonia</option>
+    
+                      <option value="Eswatini">Eswatini</option>
+    
+                      <option value="Ethiopia">Ethiopia</option>
+    
+                      <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+    
+                      <option value="Faroe Islands">Faroe Islands</option>
+    
+                      <option value="Fiji">Fiji</option>
+    
+                      <option value="Finland">Finland</option>
+    
+                      <option value="France">France</option>
+    
+                      <option value="French Guiana">French Guiana</option>
+    
+                      <option value="French Polynesia">French Polynesia</option>
+    
+                      <option value="French Southern Territories">French Southern Territories</option>
+    
+                      <option value="Gabon">Gabon</option>
+    
+                      <option value="Gambia">Gambia</option>
+    
+                      <option value="Georgia">Georgia</option>
+    
+                      <option value="Germany">Germany</option>
+    
+                      <option value="Ghana">Ghana</option>
+    
+                      <option value="Gibraltar">Gibraltar</option>
+    
+                      <option value="Greece">Greece</option>
+    
+                      <option value="Greenland">Greenland</option>
+    
+                      <option value="Grenada">Grenada</option>
+    
+                      <option value="Guadeloupe">Guadeloupe</option>
+    
+                      <option value="Guam">Guam</option>
+    
+                      <option value="Guatemala">Guatemala</option>
+    
+                      <option value="Guernsey">Guernsey</option>
+    
+                      <option value="Guinea">Guinea</option>
+    
+                      <option value="Guinea-Bissau">Guinea-Bissau</option>
+    
+                      <option value="Guyana">Guyana</option>
+    
+                      <option value="Haiti">Haiti</option>
+    
+                      <option value="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option>
+    
+                      <option value="Holy See">Holy See</option>
+    
+                      <option value="Honduras">Honduras</option>
+    
+                      <option value="Hong Kong">Hong Kong</option>
+    
+                      <option value="Hungary">Hungary</option>
+    
+                      <option value="Iceland">Iceland</option>
+    
+                      <option value="India">India</option>
+    
+                      <option value="Indonesia">Indonesia</option>
+    
+                      <option value="Iran (Islamic Republic of)">Iran (Islamic Republic of)</option>
+    
+                      <option value="Iraq">Iraq</option>
+    
+                      <option value="Ireland">Ireland</option>
+    
+                      <option value="Isle of Man">Isle of Man</option>
+    
+                      <option value="Israel">Israel</option>
+    
+                      <option value="Italy">Italy</option>
+    
+                      <option value="Jamaica">Jamaica</option>
+    
+                      <option value="Japan">Japan</option>
+    
+                      <option value="Jersey">Jersey</option>
+    
+                      <option value="Jordan">Jordan</option>
+    
+                      <option value="Kazakhstan">Kazakhstan</option>
+    
+                      <option value="Kenya">Kenya</option>
+    
+                      <option value="Kiribati">Kiribati</option>
+    
+                      <option value="Korea (Democratic People's Republic of)">Korea (Democratic People's Republic of)
+                      </option>
+    
+                      <option value="Korea (Republic of)">Korea (Republic of)</option>
+    
+                      <option value="Kuwait">Kuwait</option>
+    
+                      <option value="Kyrgyzstan">Kyrgyzstan</option>
+    
+                      <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+    
+                      <option value="Latvia">Latvia</option>
+    
+                      <option value="Lebanon">Lebanon</option>
+    
+                      <option value="Lesotho">Lesotho</option>
+    
+                      <option value="Liberia">Liberia</option>
+    
+                      <option value="Libya">Libya</option>
+    
+                      <option value="Liechtenstein">Liechtenstein</option>
+    
+                      <option value="Lithuania">Lithuania</option>
+    
+                      <option value="Luxembourg">Luxembourg</option>
+    
+                      <option value="Macao">Macao</option>
+    
+                      <option value="Macedonia (the former Yugoslav Republic of)">Macedonia (the former Yugoslav Republic
+                        of)</option>
+    
+                      <option value="Madagascar">Madagascar</option>
+    
+                      <option value="Malawi">Malawi</option>
+    
+                      <option value="Malaysia">Malaysia</option>
+    
+                      <option value="Maldives">Maldives</option>
+    
+                      <option value="Mali">Mali</option>
+    
+                      <option value="Malta">Malta</option>
+    
+                      <option value="Marshall Islands">Marshall Islands</option>
+    
+                      <option value="Martinique">Martinique</option>
+    
+                      <option value="Mauritania">Mauritania</option>
+    
+                      <option value="Mauritius">Mauritius</option>
+    
+                      <option value="Mayotte">Mayotte</option>
+    
+                      <option value="Mexico">Mexico</option>
+    
+                      <option value="Micronesia (Federated States of)">Micronesia (Federated States of)</option>
+    
+                      <option value="Moldova (Republic of)">Moldova (Republic of)</option>
+    
+                      <option value="Monaco">Monaco</option>
+    
+                      <option value="Mongolia">Mongolia</option>
+    
+                      <option value="Montenegro">Montenegro</option>
+    
+                      <option value="Montserrat">Montserrat</option>
+    
+                      <option value="Morocco">Morocco</option>
+    
+                      <option value="Mozambique">Mozambique</option>
+    
+                      <option value="Myanmar">Myanmar</option>
+    
+                      <option value="Namibia">Namibia</option>
+    
+                      <option value="Nauru">Nauru</option>
+    
+                      <option value="Nepal">Nepal</option>
+    
+                      <option value="Netherlands">Netherlands</option>
+    
+                      <option value="New Caledonia">New Caledonia</option>
+    
+                      <option value="New Zealand">New Zealand</option>
+    
+                      <option value="Nicaragua">Nicaragua</option>
+    
+                      <option value="Niger">Niger</option>
+    
+                      <option value="Nigeria">Nigeria</option>
+    
+                      <option value="Niue">Niue</option>
+    
+                      <option value="Norfolk Island">Norfolk Island</option>
+    
+                      <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+    
+                      <option value="Norway">Norway</option>
+    
+                      <option value="Oman">Oman</option>
+    
+                      <option value="Pakistan">Pakistan</option>
+    
+                      <option value="Palau">Palau</option>
+    
+                      <option value="Palestine">Palestine</option>
+    
+                      <option value=" State of"> State of</option>
+    
+                      <option value="Panama">Panama</option>
+    
+                      <option value="Papua New Guinea">Papua New Guinea</option>
+    
+                      <option value="Paraguay">Paraguay</option>
+    
+                      <option value="Peru">Peru</option>
+    
+                      <option value="Philippines">Philippines</option>
+    
+                      <option value="Pitcairn">Pitcairn</option>
+    
+                      <option value="Poland">Poland</option>
+    
+                      <option value="Portugal">Portugal</option>
+    
+                      <option value="Puerto Rico">Puerto Rico</option>
+    
+                      <option value="Qatar">Qatar</option>
+    
+                      <option value="Réunion">Réunion</option>
+    
+                      <option value="Romania">Romania</option>
+    
+                      <option value="Russian Federation">Russian Federation</option>
+    
+                      <option value="Rwanda">Rwanda</option>
+    
+                      <option value="Saint Barthélemy">Saint Barthélemy</option>
+    
+                      <option value="Saint Helena">Saint Helena</option>
+    
+                      <option value=" Ascension and Tristan da Cunha"> Ascension and Tristan da Cunha</option>
+    
+                      <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+    
+                      <option value="Saint Lucia">Saint Lucia</option>
+    
+                      <option value="Saint Martin (French part)">Saint Martin (French part)</option>
+    
+                      <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+    
+                      <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+    
+                      <option value="Samoa">Samoa</option>
+    
+                      <option value="San Marino">San Marino</option>
+    
+                      <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+    
+                      <option value="Saudi Arabia">Saudi Arabia</option>
+    
+                      <option value="Senegal">Senegal</option>
+    
+                      <option value="Serbia">Serbia</option>
+    
+                      <option value="Seychelles">Seychelles</option>
+    
+                      <option value="Sierra Leone">Sierra Leone</option>
+    
+                      <option value="Singapore">Singapore</option>
+    
+                      <option value="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</option>
+    
+                      <option value="Slovakia">Slovakia</option>
+    
+                      <option value="Slovenia">Slovenia</option>
+    
+                      <option value="Solomon Islands">Solomon Islands</option>
+    
+                      <option value="Somalia">Somalia</option>
+    
+                      <option value="South Africa">South Africa</option>
+    
+                      <option value="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich
+                        Islands</option>
+    
+                      <option value="South Sudan">South Sudan</option>
+    
+                      <option value="Spain">Spain</option>
+    
+                      <option value="Sri Lanka">Sri Lanka</option>
+    
+                      <option value="Sudan">Sudan</option>
+    
+                      <option value="Suriname">Suriname</option>
+    
+                      <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+    
+                      <option value="Sweden">Sweden</option>
+    
+                      <option value="Switzerland">Switzerland</option>
+    
+                      <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+    
+                      <option value="Taiwan">Taiwan</option>
+    
+                      <option value=" Province of China"> Province of China</option>
+    
+                      <option value="Tajikistan">Tajikistan</option>
+    
+                      <option value="Tanzania">Tanzania</option>
+    
+                      <option value=" United Republic of"> United Republic of</option>
+    
+                      <option value="Thailand">Thailand</option>
+    
+                      <option value="Timor-Leste">Timor-Leste</option>
+    
+                      <option value="Togo">Togo</option>
+    
+                      <option value="Tokelau">Tokelau</option>
+    
+                      <option value="Tonga">Tonga</option>
+    
+                      <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+    
+                      <option value="Tunisia">Tunisia</option>
+    
+                      <option value="Turkey">Turkey</option>
+    
+                      <option value="Turkmenistan">Turkmenistan</option>
+    
+                      <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+    
+                      <option value="Tuvalu">Tuvalu</option>
+    
+                      <option value="Uganda">Uganda</option>
+    
+                      <option value="Ukraine">Ukraine</option>
+    
+                      <option value="United Arab Emirates">United Arab Emirates</option>
+    
+                      <option value="United Kingdom of Great Britain and Northern Ireland">United Kingdom of Great Britain
+                        and Northern Ireland</option>
+    
+                      <option value="United States of America">United States of America</option>
+    
+                      <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+    
+                      <option value="Uruguay">Uruguay</option>
+    
+                      <option value="Uzbekistan">Uzbekistan</option>
+    
+                      <option value="Vanuatu">Vanuatu</option>
+    
+                      <option value="Venezuela (Bolivarian Republic of)">Venezuela (Bolivarian Republic of)</option>
+    
+                      <option value="Viet Nam">Viet Nam</option>
+    
+                      <option value="Virgin Islands (British)">Virgin Islands (British)</option>
+    
+                      <option value="Virgin Islands (U.S.)">Virgin Islands (U.S.)</option>
+    
+                      <option value="Wallis and Futuna">Wallis and Futuna</option>
+    
+                      <option value="Western Sahara">Western Sahara</option>
+    
+                      <option value="Yemen">Yemen</option>
+    
+                      <option value="Zambia">Zambia</option>
+    
+                      <option value="Zimbabwe">Zimbabwe</option>
+    
+                    </select>
+                    <label for="mce-COUNTRY" class="input__label">Country</label>
+                    <span class="input-error">Please fill the field</span>
+                  </div>
+                </div>
+                <div class="form-group input">
+                  <div class="parent">
+    
+                    <input type="text" value="" name="ZIPCODE" class="form-control input__field required" id="mce-ZIPCODE"
+                      placeholder="Zip Code">
+                    <label for="mce-ZIPCODE" class="input__label">Zip Code</label>
+                    <span class="input-error">Please fill the field</span>
+                  </div>
+                </div>
+                <div class="form-action">
+    
+                  <button type="submit" class="btn btn-theme" href="#success_message">Subscribe</button>
+    
+                </div>
+                <div class="response">
+                  <p></p>
+                </div>
+              </form>
+    
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="set-cookie-signup" class="btn-transparent btn-cancel p-0" data-dismiss="modal">No
+                thanks</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+  <!-- <style>
+        .subscribe-popUp #mc-embedded-subscribe-form select {
+          background: url(//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/icon-arrow-down.svg?22384) no-repeat right center;
+        }
+    
+        .subscribe-popUp #mc-embedded-subscribe-form select:invalid {
+          color: #6c757d !important;
+        }
+      </style> -->
+
+
+  <!-- need return dialog?! -->
+  <!-- <div class="modal make_returns" tabindex="-1" role="dialog" id="make_returns">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header d-block">
+              <h1 class="modal-title">Rules Before Returning</h1>
+              <p>Please ensure you have read our <a href="/pages/customer-care#returns-exchangesWrap">Returns Policy</a> and
+                your return complies with the 3 below points before lodging your return.</p>
+            </div>
+            <div class="modal-body">
+              <div class="product-returns-condition d-flex">
+                <div class="col">
+                  <figure>
+                    <div class="product-returns-img">
+                      <?xml version="1.0" encoding="utf-8"?>
+                      <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="90px" height="90px"
+                        viewBox="0 0 90 90" xml:space="preserve">
+                        <path
+                          d="M76.7,76.9h5.8v1H75v-7.5h1v5.8c8.4-8.3,13-19.3,13-31.2C89,20.7,69.3,1,45,1c-8.1,0-16,2.2-22.8,6.4l-0.5-0.9
+      C28.7,2.3,36.7,0,45,0c24.8,0,45,20.2,45,45C90,57.1,85.3,68.4,76.7,76.9z M45,89C20.7,89,1,69.3,1,45c0-12.9,5.6-25,15.3-33.4v5.9
+      h1V10H9.8v1h5.7C5.7,19.6,0,31.9,0,45c0,24.8,20.2,45,45,45c9.1,0,17.9-2.7,25.5-7.9l-0.6-0.8C62.6,86.3,53.9,89,45,89z" />
+                        <g>
+                          <path d="M26.2,48.1c0.6,1.5,1.6,2.8,3,3.7c1.5,0.9,3.2,1.4,5.1,1.4c2.3,0,4.3-0.7,5.8-2.1c1.5-1.4,2.2-3.3,2.2-5.5
+        c0-2.1-0.7-3.9-2.2-5.2c-1.4-1.4-3.3-2.1-5.5-2.1c-1.1,0-2.1,0.1-2.9,0.4L31.4,38l9-9.3H27.9V28h13.8v0.6l-9,9.2
+        c0.5-0.2,1.2-0.3,2.2-0.3c2.4,0,4.3,0.8,5.9,2.3c1.5,1.5,2.3,3.4,2.3,5.7c0,2.5-0.8,4.6-2.5,6.1c-1.7,1.5-3.7,2.3-6.3,2.3
+        c-2.1,0-3.9-0.5-5.5-1.5c-1.6-1-2.7-2.4-3.3-4L26.2,48.1z" />
+                          <path d="M46.6,40.7c0-3,0-4.9,0.1-5.7c0.2-2.2,1.1-4.1,2.7-5.4s3.4-2.1,5.6-2.1c2.2,0,4,0.7,5.6,2.1s2.5,3.2,2.7,5.4
+        c0.1,0.8,0.1,2.7,0.1,5.7c0,3,0,4.9-0.1,5.7c-0.2,2.2-1.1,4-2.7,5.4s-3.4,2.1-5.6,2.1s-4-0.7-5.6-2.1s-2.5-3.2-2.7-5.4
+        C46.7,45.7,46.6,43.8,46.6,40.7z M49.9,51.3c1.4,1.3,3.1,1.9,5.1,1.9s3.7-0.6,5.1-1.9c1.4-1.3,2.2-2.9,2.4-4.9
+        c0.1-0.8,0.1-2.6,0.1-5.7c0-3,0-4.8-0.1-5.6c-0.2-1.9-1-3.6-2.4-4.8C58.7,29,57,28.3,55,28.3s-3.7,0.7-5.1,1.9
+        c-1.4,1.3-2.2,2.9-2.4,4.8c-0.1,0.8-0.1,2.6-0.1,5.6c0,3,0,4.9,0.1,5.7C47.7,48.3,48.5,50,49.9,51.3z" />
+                        </g>
+                        <g>
+                          <path d="M26.1,65.3v-6.1h2c1,0,1.7,0.3,2.3,0.8c0.6,0.6,0.8,1.3,0.8,2.2c0,0.9-0.3,1.6-0.8,2.2C29.8,65,29,65.3,28,65.3H26.1z
+         M26.7,64.6H28c1.6,0,2.5-0.9,2.5-2.4c0-1.5-0.9-2.4-2.5-2.4h-1.2V64.6z" />
+                          <path
+                            d="M37.4,65.3l2.7-6.3l2.8,6.3h-0.7l-0.7-1.5h-2.7l-0.7,1.5H37.4z M39,63.1h2.2l-1.1-2.6L39,63.1z" />
+                          <path d="M50.5,65.3v-2.5l-2.1-3.6h0.8l1.7,2.9l1.7-2.9h0.7l-2.1,3.6v2.5H50.5z" />
+                          <path d="M59.4,63.8c0.5,0.6,1.1,0.9,1.9,0.9c0.8,0,1.3-0.5,1.3-1c0-0.3-0.1-0.6-0.3-0.8c-0.2-0.2-0.5-0.4-1.1-0.7
+        c-0.3-0.1-0.5-0.3-0.6-0.3c-0.1-0.1-0.3-0.2-0.5-0.3c-0.3-0.3-0.5-0.6-0.5-1.1c0-0.9,0.7-1.5,1.8-1.5c0.5,0,0.9,0.1,1.2,0.4v0.8
+        c-0.4-0.4-0.8-0.6-1.2-0.6c-0.7,0-1.1,0.3-1.1,0.9c0,0.3,0.1,0.5,0.3,0.6c0.2,0.2,0.5,0.3,0.9,0.6c0.6,0.3,0.9,0.5,1.2,0.8
+        c0.3,0.3,0.5,0.7,0.5,1.2c0,0.4-0.2,0.8-0.5,1.1c-0.4,0.3-0.8,0.5-1.4,0.5c-0.8,0-1.4-0.2-1.9-0.7V63.8z" />
+                        </g>
+                      </svg>
+    
+                    </div>
+                    <figcaption>
+                      <p>1. Item/s must be returned within 30 days of delivery.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+    
+                <div class="col">
+                  <figure>
+                    <div class="product-returns-img">
+                      <?xml version="1.0" encoding="utf-8"?>
+                      <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="105px" height="90px"
+                        viewBox="0 0 105 90" xml:space="preserve">
+                        <g>
+                          <path d="M100.9,17.7C94.2,7.7,86.3,6.1,80.8,6.5C75.1,7,70,9.9,66.5,13.5l-5-5L46,8.9L0.2,54.7l29.7,29.7L71.3,43
+        c2.2,1.2,5.3,1.2,9.2,1.2c0.6,0,1.3,0,2,0c0.1,0,0.2,0,0.3,0c6.9,0,15.9-3,19.7-9.8C104.4,31,105.7,25.4,100.9,17.7z M1.6,54.7
+        L46.4,9.9l14.7-0.4l4.7,4.7c-1.4,1.6-2.5,3.3-3.3,4.9c-0.4,0.8-0.7,1.7-0.9,2.5c-1-0.7-2.2-1-3.5-1c-1.7,0-3.4,0.7-4.6,1.9
+        c-2.5,2.5-2.5,6.7,0,9.2c1.3,1.3,2.9,1.9,4.6,1.9c1.7,0,3.3-0.6,4.6-1.9c2.5-2.5,2.5-6.7,0-9.2c-0.1-0.1-0.2-0.2-0.3-0.2
+        c0.2-0.9,0.5-1.8,0.9-2.7c0.7-1.5,1.8-3.1,3.1-4.6l8.6,8.6l-0.4,14.7L29.9,83L1.6,54.7z M63.5,28.5c-0.9-1.5-1.3-3.2-1.1-5
+        C63.6,25,63.9,26.8,63.5,28.5z M63,29.7c-0.2,0.5-0.5,0.9-0.9,1.3c-2.1,2.1-5.6,2.1-7.8,0c-2.1-2.1-2.1-5.6,0-7.8
+        c1-1,2.4-1.6,3.9-1.6c1.2,0,2.3,0.4,3.3,1.1C61.1,25.3,61.6,27.7,63,29.7z M101.7,33.9c-3.5,6.2-12,9.3-18.9,9.3
+        c-0.1,0-0.2,0-0.3,0c-0.7,0-1.3,0-2,0c-3.6,0-6.4-0.1-8.4-1l3.4-3.4l0.1-0.1l0.5-15.5l-8.9-8.9c3.4-3.4,8.2-6.2,13.7-6.7
+        c5.2-0.4,12.7,1.1,19.1,10.8C103.6,24,104.2,29.4,101.7,33.9z" />
+                          <polygon
+                            points="28.2,51.5 32.6,55.8 25,54.7 24.4,55.3 29.9,60.7 30.5,60.1 26.1,55.7 33.8,56.8 34.3,56.3 28.8,50.8 	" />
+                          <polygon points="37.3,52.1 35.3,50.1 37.6,47.8 37,47.2 34.7,49.5 33,47.8 35.5,45.4 34.9,44.8 31.8,47.9 37.3,53.3 40.4,50.2 
+        39.8,49.6 	" />
+                          <polygon points="43.3,36.4 46.2,41.7 40.7,39 40.3,39.4 43.1,44.8 37.8,41.9 37.1,42.5 44.2,46.4 44.5,46 41.7,40.4 47.3,43.2 
+        47.7,42.8 43.9,35.8 	" />
+                        </g>
+                      </svg>
+    
+                    </div>
+                    <figcaption>
+                      <p>2. Item must be unworn with orginal tags attached.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+    
+                <div class="col">
+                  <figure>
+                    <div class="product-returns-img">
+                      <?xml version="1.0" encoding="utf-8"?>
+                      <svg version="1.2" baseProfile="tiny" id="box" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="90px" height="90px"
+                        viewBox="0 0 90 90" xml:space="preserve">
+                        <path d="M1.5,3.5V22H4v64h82V22h2.5V3.5H1.5z M85,85H5V22h80V85z M87.5,21H86H4H2.5V4.5h85V21z M36.7,54.4c0.3-0.3,0.5-0.7,0.5-1.2
+      c0-0.4-0.1-0.7-0.3-1s-0.6-0.5-1-0.7L34.8,51c-0.6-0.2-1-0.6-1.3-0.9c-0.3-0.4-0.4-0.8-0.4-1.4c0-0.6,0.2-1.1,0.7-1.6
+      s1.1-0.6,1.8-0.6c0.5,0,1,0.1,1.4,0.3s0.7,0.6,0.9,1l-0.9,0.6c-0.2-0.3-0.4-0.6-0.7-0.8c-0.2-0.2-0.5-0.2-0.8-0.2
+      c-0.4,0-0.7,0.1-1,0.4c-0.3,0.2-0.4,0.5-0.4,0.9c0,0.3,0.1,0.6,0.3,0.8c0.2,0.2,0.5,0.4,0.9,0.6l1.3,0.6c0.6,0.2,1,0.6,1.3,1
+      s0.4,0.9,0.4,1.4c0,0.8-0.3,1.5-0.8,2s-1.2,0.7-2,0.7c-0.7,0-1.3-0.2-1.7-0.5c-0.5-0.4-0.8-0.9-1-1.5l1-0.5c0.1,0.5,0.3,0.9,0.6,1.2
+      c0.3,0.3,0.7,0.4,1.1,0.4C36,54.9,36.4,54.8,36.7,54.4z M45.6,55.6h-1v-8.8h1V55.6z M53.6,51.4h0.2l3.2,4.2h1.3l-3.4-4.2h0.2
+      c0.8,0,1.4-0.2,1.8-0.6s0.6-0.9,0.6-1.6c0-0.4-0.1-0.8-0.2-1.1s-0.3-0.6-0.6-0.8c-0.2-0.2-0.5-0.3-0.7-0.3c-0.3-0.1-0.7-0.1-1.3-0.1
+      h-2.1v8.8h1V51.4z M53.6,47.6h0.8c0.8,0,1.3,0.1,1.6,0.3s0.4,0.6,0.4,1.2c0,0.5-0.1,0.9-0.4,1.1c-0.3,0.2-0.8,0.3-1.6,0.3h-0.8V47.6
+      z" />
+                      </svg>
+    
+                    </div>
+                    <figcaption>
+                      <p>3. Items must be returned in their original packaging.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer d-block">
+              <div class="form-btn text-center">
+                <a href="/a/returns" class="btn btn-theme">MY ITEM/S MATCH</a>
+              </div>
+              <button type="button" class="btn btn-transparent btn-cancel p-0" data-dismiss="modal">cancel</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+  </div>
+  <!-- preloader -->
+  <div class="preloader-wrap">
+    <div class="preloader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+  </div>
+  <!-- preloader -->
+
+
+  <!-- TERMS MODAL -->
+  <div class="cookies-terms">
+    <div class="cookies-content">
+      <p>SIR the label uses cookies to help personalise your shopping experience. For more information view our <a
+          href="/pages/customer-care#legal-policiesWrap">Privacy and cookie policy</a></p>
+      <button class="btn btn-lined btn-theme">Accept</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>
