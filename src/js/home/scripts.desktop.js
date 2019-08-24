@@ -6779,8 +6779,6 @@
               n(this, t),
               this.dom = e,
               this._ctx = i,
-            //   FIXME: enable mobile friendly and ie support
-            //   f.default.touchOnly || f.default.isIe11 ? this._prepareVideo() : this._prepareVideo(),
               f.default.touchOnly || f.default.isIe11 ? this._prepareImage() : this._prepareVideo(),
               this.x = 0,
               this.alpha = 0,

@@ -259,7 +259,7 @@ exports.default = series(
 	cleanDist,
 	parallel(
 		buildScripts,
-		lintScripts,
+		// lintScripts,
 		buildStyles,
 		copyFiles
 	)
