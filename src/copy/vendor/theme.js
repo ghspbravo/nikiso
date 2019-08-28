@@ -1,3 +1,4 @@
+//@ts-nocheck
 !function (n) {
   function t(t) {
     for (var o, r, i = t[0], s = t[1], u = t[2], l = 0, m = []; l < i.length; l++)

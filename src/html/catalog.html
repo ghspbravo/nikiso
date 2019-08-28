@@ -1,0 +1,652 @@
+{{> components/header.html title=htmlWebpackPlugin.options.title }}
+
+<main role="main" id="MainContent">
+  <div id="shopify-section-collection" class="shopify-section">
+    <section class="all-product">
+      <div class="container-fluid">
+        <div class="row ">
+          <!-- FILTERS & CATEGORIES DESKTOP -->
+          <div class="col-xl-3 offset-xl-1 theme-menu sir-cat-tabs d-none d-xl-block">
+            <div class="collection-affix">
+              <ul class="nav nav-tabs" role="tablist" id="myTab">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" data-target="#categories" role="tab">категории </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" data-target="#edits" role="tab">sale</a>
+                </li>
+              </ul>
+              <!-- DEV CATEGORIES -->
+              <div class="tab-content">
+                <div id="categories" role="tabpanel" class="tab-pane fade show active">
+                  <ul>
+                    {{#each htmlWebpackPlugin.options.categories.main}}
+                    <li>
+                      <a href="{{link}}" {{#if active }} class="active" {{/if}} >{{title}}</a>
+                    </li>
+                    {{/each}}
+                  </ul>
+                </div>
+                <div id="edits" role="tabpanel" class="tab-pane fade ">
+                  <ul>
+                    {{#each htmlWebpackPlugin.options.categories.sale}}
+                    <li>
+                      <a href="{{link}}" {{#if active }} class="active" {{/if}} >{{title}}</a>
+                    </li>
+                    {{/each}}
+                  </ul>
+                </div>
+              </div>
+              <!-- DEV FILTERS -->
+              <div class="accordion-theme">
+                <h4 class="filter-head">Фильтры</h4>
+                <div class="panel-group" id="accordion2">
+
+                  {{#each htmlWebpackPlugin.options.filters}}
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion2" data-target="#{{filterId}}">
+                          <span class="contract">
+                            <svg id="_" data-name="+" xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                              viewBox="0 0 7 7">
+                              <defs>
+                                <style>
+                                  .cls-1 {
+                                    fill: #feffef;
+                                    stroke: #000;
+                                    stroke-width: 1px;
+                                    fill-rule: evenodd;
+                                  }
+                                </style>
+                              </defs>
+                              <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                              <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                            </svg>
+                          </span>
+                          <span class="expanded d-none">
+                            <svg id="_-" data-name="-" xmlns="http://www.w3.org/2000/svg" width="7" height="1"
+                              viewBox="0 0 7 1">
+                              <defs>
+                                <style>
+                                  .cls-1 {
+                                    fill: #feffef;
+                                    stroke: #000;
+                                    stroke-width: 1px;
+                                    fill-rule: evenodd;
+                                  }
+                                </style>
+                              </defs>
+                              <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                                transform="translate(0 -3)" />
+                            </svg>
+                          </span>
+                          {{title}}
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="{{filterId}}" class="panel-collapse collapse">
+                      <div class="panel-body sort-sec">
+                        <div class="checklist-sec">
+                          <ul class="{{#if horizontal}} d-flex {{/if}} filter-price">
+                            {{#each content}}
+                            <li>
+                              <input type="checkbox" id="{{contentId}}" class="checkbox-hide" />
+                              <label for="{{contentId}}" data-value="{{value}}">
+                                <span class="d-none">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8">
+                                  <defs>
+                                      <style>
+                                        .cls-1 {
+                                          fill: none;
+                                          stroke: #000;
+                                          stroke-width: 1px;
+                                          fill-rule: evenodd;
+                                        }
+                                      </style>
+                                    </defs>
+                                    <path class="cls-1" d="M0.448,3.429L3.3,7.1,8.572,0.355" />
+                                  </svg>
+                                </span>
+                                {{value}}
+                              </label>
+                            </li>
+                            {{/each}}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {{/each}}
+
+                </div>
+              </div>
+              <!-- DEV SORTING -->
+              <div class="cat-sort">
+                <div class="d-flex">
+                  <div class="cat-sort-label">Сортировка:</div>
+                  <div class="collection-sort">
+                    <div class="theme-font" data-toggle="collapse" data-parent="#collection-sort"
+                      href="#collection-sort">{{htmlWebpackPlugin.options.sorting.default}}</div>
+                    <ul class="collapse sort-sec filter-sort" id="collection-sort">
+                      {{#each htmlWebpackPlugin.options.sorting.by}}
+                      <li>
+                        <a href="javascript:void(0)" data-value="{{value}}" data-sort="{{label}}">{{label}}</a>
+                      </li>
+                      {{/each}}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FILTERS & CATEGORIES MOBILE -->
+          <div class="col-16 d-xl-none">
+            <div class="accordion col-16" id="master-filter">
+              <div class="accordion-item">
+                <div class="accordion-title">
+                  <a data-toggle="collapse" data-parent="#master-filter" data-target="#master-filter-list">
+                    <strong>
+                      <span class="contract">
+                        <svg id="_" data-name="+" xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                          viewBox="0 0 7 7">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: #feffef;
+                                stroke: #000;
+                                stroke-width: 1px;
+                                fill-rule: evenodd;
+                              }
+                            </style>
+                          </defs>
+                          <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                          <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                        </svg>
+                      </span>
+                      <span class="expanded d-none">
+                        <svg id="_-" data-name="-" xmlns="http://www.w3.org/2000/svg" width="7" height="1"
+                          viewBox="0 0 7 1">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: #feffef;
+                                stroke: #000;
+                                stroke-width: 1px;
+                                fill-rule: evenodd;
+                              }
+                            </style>
+                          </defs>
+                          <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                            transform="translate(0 -3)" />
+                        </svg>
+                      </span>
+                    </strong>
+                    Выбрать параметры
+                  </a>
+                  <span class="float-right clear-filter" style="display: none;">Очистить фильтры</span>
+                </div>
+                <div class="accordion-detail collapse" id="master-filter-list">
+                  <div class="accordion accordion-lg accordion-nested" id="filter-accordion">
+                    <!-- DEV SOTRING MOBILE -->
+                    <div class="accordion-item">
+                      <div class="accordion-title">
+                        <a data-toggle="collapse" data-parent="#filter-accordion" data-target="#filter-list22">
+                          <strong>
+                            <span class="contract">
+                              <svg id="_" data-name="+" xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                                viewBox="0 0 7 7">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #feffef;
+                                      stroke: #000;
+                                      stroke-width: 1px;
+                                      fill-rule: evenodd;
+                                    }
+                                  </style>
+                                </defs>
+                                <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                                <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                              </svg>
+                            </span>
+                            <span class="expanded d-none">
+                              <svg id="_-" data-name="-" xmlns="http://www.w3.org/2000/svg" width="7" height="1"
+                                viewBox="0 0 7 1">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #feffef;
+                                      stroke: #000;
+                                      stroke-width: 1px;
+                                      fill-rule: evenodd;
+                                    }
+                                  </style>
+                                </defs>
+                                <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                                  transform="translate(0 -3)" />
+                              </svg>
+                            </span>
+                          </strong>
+                          Сортировка: <span class="sort-sec-mob-title">{{htmlWebpackPlugin.options.sorting.default}}</span>
+                        </a>
+                      </div>
+                      <div class="accordion-detail-wrap collapse" id="filter-list22">
+                        <div class="accordion-detail">
+                          <ul class="sort-sec filter-sort sort-sec-mob">
+                            {{#each htmlWebpackPlugin.options.sorting.by}}
+                            <li>
+                              <a href="javascript:void(0)" data-value="{{value}}" data-sort="{{label}}">{{label}}</a>
+                            </li>
+                            {{/each}}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- DEV CATEGORIES MOBILE -->
+                    <div class="accordion-item">
+                      <div class="accordion-title">
+                        <a data-toggle="collapse" data-parent="#filter-accordion" data-target="#filter-list">
+                          <strong>
+                            <span class="contract">
+                              <svg id="_" data-name="+" xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                                viewBox="0 0 7 7">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #feffef;
+                                      stroke: #000;
+                                      stroke-width: 1px;
+                                      fill-rule: evenodd;
+                                    }
+                                  </style>
+                                </defs>
+                                <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                                <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                              </svg>
+                            </span>
+                            <span class="expanded d-none">
+                              <svg id="_-" data-name="-" xmlns="http://www.w3.org/2000/svg" width="7" height="1"
+                                viewBox="0 0 7 1">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #feffef;
+                                      stroke: #000;
+                                      stroke-width: 1px;
+                                      fill-rule: evenodd;
+                                    }
+                                  </style>
+                                </defs>
+                                <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                                  transform="translate(0 -3)" />
+                              </svg>
+                            </span>
+                          </strong>
+                          категории
+                        </a>
+                      </div>
+                      <div class="accordion-detail-wrap collapse" id="filter-list">
+                        <div class="accordion-detail">
+                          <ul>
+                            {{#each htmlWebpackPlugin.options.categories.main}}
+                            <li>
+                              <a href="{{link}}">{{title}}</a>
+                            </li>
+                            {{/each}}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-title">
+                        <a data-toggle="collapse" data-parent="#filter-accordion" data-target="#filter-list2">
+                          <strong>
+                            <span class="contract">
+                              <svg id="_" data-name="+" xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                                viewBox="0 0 7 7">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #feffef;
+                                      stroke: #000;
+                                      stroke-width: 1px;
+                                      fill-rule: evenodd;
+                                    }
+                                  </style>
+                                </defs>
+                                <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                                <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                              </svg>
+                            </span>
+                            <span class="expanded d-none">
+                              <svg id="_-" data-name="-" xmlns="http://www.w3.org/2000/svg" width="7" height="1"
+                                viewBox="0 0 7 1">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #feffef;
+                                      stroke: #000;
+                                      stroke-width: 1px;
+                                      fill-rule: evenodd;
+                                    }
+                                  </style>
+                                </defs>
+                                <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                                  transform="translate(0 -3)" />
+                              </svg>
+                            </span>
+                          </strong>
+                          sale
+                        </a>
+                      </div>
+                      <div class="accordion-detail-wrap collapse" id="filter-list2">
+                        <div class="accordion-detail">
+                          <ul>
+                            {{#each htmlWebpackPlugin.options.categories.sale}}
+                            <li>
+                              <a href="{{link}}" {{#if active }} class="active" {{/if}} >{{title}}</a>
+                            </li>
+                            {{/each}}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- DEV FILTERS MOBILE -->
+                    {{#each htmlWebpackPlugin.options.filters}}
+                    <div class="accordion-item">
+                      <div class="accordion-title size-title">
+                        <a data-toggle="collapse" data-parent="#filter-accordion" data-target="#filter-mobile-{{filterId}}">
+                          <strong>
+                            <span class="contract">
+                              <svg id="_" data-name="+" xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                                viewBox="0 0 7 7">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #feffef;
+                                      stroke: #000;
+                                      stroke-width: 1px;
+                                      fill-rule: evenodd;
+                                    }
+                                  </style>
+                                </defs>
+                                <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7" />
+                                <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1" d="M3.5,0V7" />
+                              </svg>
+                            </span>
+                            <span class="expanded d-none">
+                              <svg id="_-" data-name="-" xmlns="http://www.w3.org/2000/svg" width="7" height="1"
+                                viewBox="0 0 7 1">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #feffef;
+                                      stroke: #000;
+                                      stroke-width: 1px;
+                                      fill-rule: evenodd;
+                                    }
+                                  </style>
+                                </defs>
+                                <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                                  transform="translate(0 -3)" />
+                              </svg>
+                            </span>
+                          </strong>
+                          {{title}}
+                        </a>
+                      </div>
+                      <div class="accordion-detail-wrap collapse" id="filter-mobile-{{filterId}}">
+                        <div class="accordion-detail">
+                          <div class="checklist-sec">
+                            <ul class="{{#if horizontal}} d-flex {{/if}} size-accordion filter-size">
+                              {{#each content}}
+                              <li>
+                                <input type="checkbox" id="m-checklist-{{contentId}}" class="checkbox-hide">
+                                <label for="m-checklist-{{contentId}}" data-value="{{value}}">
+                                  <span class="d-none">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8">
+                                      <defs>
+                                          <style>
+                                            .cls-1 {
+                                              fill: none;
+                                              stroke: #000;
+                                              stroke-width: 1px;
+                                              fill-rule: evenodd;
+                                            }
+                                          </style>
+                                        </defs>
+                                        <path class="cls-1" d="M0.448,3.429L3.3,7.1,8.572,0.355" />
+                                      </svg>
+                                    </span>
+                                  {{value}}
+                                </label>
+                              </li>
+                              {{/each}}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {{/each}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CATALOGUE -->
+          <div class="col-xl-11">
+            <!-- DEV No result message -->
+            <div class="no-result" style="display: none;">
+              <h4>Whoops! We didn't find any result for your search criteria </h4>
+              <button type="button" class="btn btn-theme btn-lg clear-filter" style="display:block !important">Clear
+                filters</button>
+            </div>
+            <div class="row-40 row all-new row-mob-0">
+              <!-- DEV PRODUCT -->
+              {{#each htmlWebpackPlugin.options.products}}
+              <div class="grid-40 col-8">
+                <div class="grid-list-40 grid-collection">
+                  <div class="grid-list-img" id="product-{{productId}}">
+                    <a href="{{link}}">
+                      <img
+                        src="{{imageSrc}}"
+                        alt="{{title}}" />
+                    </a>
+                    <div class="grid-list-wrap d-flex flex-column justify-content-between ">
+                      <!-- <div class="grid-list-img-hover d-none d-xl-block">
+                        <img
+                          src="{{imageHoverSrc}}" />
+                      </div>
+                      <div class="grid-list-category d-none d-xl-block">
+                        <div class="product-sub-header">
+                          <span>{{badge}}</span>
+                        </div>
+                      </div> -->
+                      <!-- add to wishlist -->
+                      <div class="d-flex grid-list-float-mob align-items-center">
+                        <div class="grid-list-icon " data-id="{{productId}}" onclick="e.preventDefault();"
+                          href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: none;
+                                  stroke: #000;
+                                  stroke-width: 1px;
+                                  fill-rule: evenodd;
+                                }
+                              </style>
+                            </defs>
+                            <path id="Forma_1_copy_2" data-name="Forma 1 copy 2" class="cls-1"
+                              d="M5.5,9.384L4.791,8.7C2.17,6.469.456,4.963,0.456,3.117A2.685,2.685,0,0,1,3.229.445,3.077,3.077,0,0,1,5.5,1.466,3.081,3.081,0,0,1,7.766.445a2.685,2.685,0,0,1,2.772,2.672c0,1.847-1.714,3.352-4.336,5.587Z" />
+                          </svg>
+                        </div>
+                        <div class="product-color">
+                          <ul class="d-flex list-unstyled colors my-0">
+                            {{#each materials}}
+                            <li>
+                              <input type="radio" id="{{materialId}}" class="color2147508813913"
+                                value="STELLA" />
+                              <label class="w-100" for="{{materialId}}"
+                                style="background-color: black; background-image: url({{bgImage}})"
+                                data-variant-image="{{image}}"></label>
+                            </li>
+                            {{/each}}
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="grid-list-details">
+                        <!-- <div class="grid-list-icon d-none d-xl-inline-block " data-id="2147508813913"
+                          onclick="e.preventDefault();" href="#login" data-toggle="modal">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: none;
+                                  stroke: #000;
+                                  stroke-width: 1px;
+                                  fill-rule: evenodd;
+                                }
+                              </style>
+                            </defs>
+                            <path id="Forma_1_copy_2" data-name="Forma 1 copy 2" class="cls-1"
+                              d="M5.5,9.384L4.791,8.7C2.17,6.469.456,4.963,0.456,3.117A2.685,2.685,0,0,1,3.229.445,3.077,3.077,0,0,1,5.5,1.466,3.081,3.081,0,0,1,7.766.445a2.685,2.685,0,0,1,2.772,2.672c0,1.847-1.714,3.352-4.336,5.587Z" />
+                          </svg>
+                        </div> -->
+                        <div class="product-heading">
+                          <h1 class="text-ellipsis">{{title}}</h1>
+                          <div data-price-wrapper="">
+                            <span data-product-price>
+                              <span class=money>₽ {{price}}</span>
+                            </span>
+                          </div>
+                          <!-- BADGE MOBILE -->
+                          <div class="grid-list-category">
+                            <div class="product-sub-header">
+                              <span>{{badge}}</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- PRODUCT MATERIAL -->
+                        <!-- <div class="product-color d-none d-xl-block">
+                          <ul class="d-flex list-unstyled my-0 colors">
+                            {{#each materials}}
+                            <li {{#if active}} class="active" {{/if}}>
+                              <input type="radio" id="{{materialId}}" name="color2147508813913"
+                                class="color2147508813913" value="STELLA" />
+                              <label class="w-100" for="{{materialId}}"
+                                style="background-color: stella; background-image: url({{image}})"
+                                data-variant-image="//cdn.shopify.com/s/files/1/0037/8925/8841/products/S45-19172-STL-1146.jpg?v=1566340776"></label>
+                            </li>
+                            {{/each}}
+                          </ul>
+                        </div> -->
+                        <!-- ADD TO BAG -->
+                        <div class="add-to-bag accordion-theme d-none d-xl-block">
+                          <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" data-target="#quick-add-{{productId}}">
+                                    <span class="contract">
+                                      <svg id="_" data-name="+" xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                                        viewBox="0 0 7 7">
+                                        <defs>
+                                          <style>
+                                            .cls-1 {
+                                              fill: #feffef;
+                                              stroke: #000;
+                                              stroke-width: 1px;
+                                              fill-rule: evenodd;
+                                            }
+                                          </style>
+                                        </defs>
+                                        <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1"
+                                          d="M0,3.5H7" />
+                                        <path id="Shape_718_copy_2" data-name="Shape 718 copy 2" class="cls-1"
+                                          d="M3.5,0V7" />
+                                      </svg>
+                                    </span>
+                                    <span class="expanded d-none">
+                                      <svg id="_-" data-name="-" xmlns="http://www.w3.org/2000/svg" width="7" height="1"
+                                        viewBox="0 0 7 1">
+                                        <defs>
+                                          <style>
+                                            .cls-1 {
+                                              fill: #feffef;
+                                              stroke: #000;
+                                              stroke-width: 1px;
+                                              fill-rule: evenodd;
+                                            }
+                                          </style>
+                                        </defs>
+                                        <path id="Shape_718_copy" data-name="Shape 718 copy" class="cls-1" d="M0,3.5H7"
+                                          transform="translate(0 -3)" />
+                                      </svg>
+                                    </span>
+                                    Добавить
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="quick-add-{{productId}}" class="panel-collapse collapse">
+                                <div class="d-flex quick-add ">
+                                  <div class="theme-font">Размеры:</div>
+                                  <ul class="theme-font-list d-flex m-0 quick-size">
+                                    {{#each sizes}}
+                                    <li>
+                                      <input type="radio" id="{{sizeId}}" name="size2147508813913" value="{{size}}" />
+                                      <label for="{{sizeId}}" data-color-target="product-2147508813913"
+                                        class="addtocart_size">{{size}}</label>
+                                    </li>
+                                    {{/each}}
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PRODUCT PAGE -->
+                    <a href="{{link}}" class="prod-detail-link"></a>
+                  </div>
+                </div>
+              </div>
+              {{/each}}
+
+              <!-- <div id="more" class="col-md-12 center">
+                <p>
+                  <a href="/collections/dresses?page=2">Далее</a>
+                </p>
+              </div> -->
+              <div id="product-list-foot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style type="text/css">
+      .loader.hidden {
+        display: none;
+      }
+
+      .loader {
+        text-align: center;
+        width: 100%;
+      }
+
+      .loader img {
+        width: auto;
+        height: 200px;
+      }
+
+      .no-products {
+        margin-top: 100px;
+        font-size: 24px;
+      }
+    </style>
+  </div>
+</main>
+
+{{> components/footer.html }}

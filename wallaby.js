@@ -1,0 +1,37 @@
+module.exports = function (wallaby) {
+  return {
+    files: [
+      { pattern: 'src/js/**/*.js', load: false },
+      { pattern: '!src/js/**/*.test.js', load: false },
+    ],
+
+    tests: [
+      { pattern: 'src/js/**/*.test.js', load: false }
+    ],
+
+    postprocessor: wallaby.postprocessors.webpack({
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                cacheDirectory: true
+              }
+            }
+          }
+        ]
+      }
+    }),
+
+    env: {
+      kind: 'chrome'
+    },
+
+    setup: function () {
+      window.__moduleBundler.loadTests();
+    }
+  };
+};

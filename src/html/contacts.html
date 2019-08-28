@@ -1,0 +1,119 @@
+{{> components/header.html title=htmlWebpackPlugin.options.title }}
+
+<main role="main" id="MainContent">
+  <section class="contactUs-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-7 offset-lg-2">
+          <h1 class="page-title">Свяжись с нами</h1>
+        </div>
+        <div class="col-lg-5">
+
+        </div>
+      </div>
+      <div class="row flex-column-reverse flex-lg-row">
+
+        <div class="col-lg-5 offset-lg-2">
+
+          <div id="shopify-section-contact" class="shopify-section">
+            <div class="sr-card card-divider">
+              <div class="sr-card-item">
+                <div class="sr-card-item-title">
+                  Телефон
+                </div>
+                <div class="sr-card-item-content">
+                  <ul>
+                    <li><span style="text-decoration: underline;">По каталогу</span></li>
+                    <li>+7 999 999 99 99</li>
+                    <li>ПН - ПТ | 9 - 18</li>
+                    <br>
+                    <li><span style="text-decoration: underline;">По вопросам доставки</span></li>
+                    <li>+7 999 999 99 99</li>
+                    <li>ПН - ПТ | 9 - 18</li>
+                    <br>
+                    <li><span style="text-decoration: underline;">По остальным вопросам</span></li>
+                    <li>+7 999 999 99 99</li>
+                    <li>ПН - ПТ | 9 - 18</li>
+                    <br>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="sr-card-item">
+                <div class="sr-card-item-title">
+                  Напиши нам
+                </div>
+                <div class="sr-card-item-content">
+                  <ul>
+                    <li><span style="text-decoration: underline;">Whats-Up</span></li>
+                    <br>
+                    <li><span style="text-decoration: underline;">Telegram</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-2">
+          <div class="contact-form">
+
+            <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8"
+              class="form-label"><input type="hidden" name="form_type" value="contact" /><input type="hidden"
+                name="utf8" value="✓" />
+
+
+
+              <h4>Сообщать о новых коллекциях?</h4>
+              <div class="form-group input ">
+                <div class="parent">
+                  <input type="text" name="contact[name]" class="form-control input__field" id="ContactFormName"
+                    value="">
+                  <label class="input__label" for="ContactFormName">Имя</label>
+                  <span class="input-error input-error-text">Please fill form</span>
+                </div>
+              </div>
+              <div class="form-group input">
+                <div class="parent">
+                  <input type="email" name="contact[email]" class="form-control input__field" id="ContactFormEmail"
+                    value="" spellcheck="false" autocomplete="off" autocapitalize="off">
+                  <label class="input__label" for="ContactFormEmail">Почта</label>
+                  <span class="input-error input-error-text">Please fill form</span>
+                </div>
+              </div>
+              <div class="form-group input ">
+                <div class="parent">
+                  <input type="tel" name="contact[phone]" class="form-control input__field" id="ContactFormPhone"
+                    value="" pattern="[0-9\-]*">
+                  <label class="input__label" for="ContactFormPhone">Номер телефона</label>
+                  <span class="input-error input-error-text">Please fill form</span>
+                </div>
+              </div>
+              <div class="form-group input ">
+                <div class="parent">
+                  <textarea name="contact[body]" class="form-control input__field" id="ContactFormMessage"></textarea>
+                  <label class="input__label" for="ContactFormMessage">Город</label>
+                  <span class="input-error input-error-text">Please fill form</span>
+                </div>
+              </div>
+              <div id="re-captcha" class="margin-top-2x"></div>
+              <div class="text-center form-btn">
+                <button id="contactBtn" type="submit" class="btn btn-theme" value=""
+                  id="contactFormSubmit">Отправить</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rte"></div>
+</main>
+
+{{> components/footer.html }}
