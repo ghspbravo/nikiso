@@ -83,7 +83,7 @@ const config = {
           { title: 'комбинезоны', link: '#' },
         ],
         sale: [
-          { title: 'sale: new in', link: '#'},
+          { title: 'sale: new in', link: '#' },
           { title: 'sale: пиджаки', link: '#' },
           { title: 'sale: рубашки и блузы', link: '#' },
           { title: 'sale: платья', link: '#' },
@@ -99,28 +99,33 @@ const config = {
         ]
       },
       filters: [
-        { filterId: 'size', title: 'Размер', horizontal: true, content: [
-          { contentId: 'size-1', value: 'XS', link: '#' },
-          { contentId: 'size-2', value: 'S', link: '#' },
-          { contentId: 'size-3', value: 'M', link: '#' },
-          { contentId: 'size-4', value: 'L', link: '#' },
-        ] },
-        { filterId:'price', title: 'Цена', content: [
-          { contentId: 'price-1', value: '₽1000 – ₽2000', link: '#' },
-          { contentId: 'price-2', value: '₽2000 – ₽4000', link: '#' },
-          { contentId: 'price-3', value: '₽4000 – ₽6000', link: '#' },
-          { contentId: 'price-4', value: '₽6000 – ₽10000', link: '#' },
-        ] },
+        {
+          filterId: 'size', title: 'Размер', horizontal: true, content: [
+            { contentId: 'size-1', value: 'XS', link: '#' },
+            { contentId: 'size-2', value: 'S', link: '#' },
+            { contentId: 'size-3', value: 'M', link: '#' },
+            { contentId: 'size-4', value: 'L', link: '#' },
+          ]
+        },
+        {
+          filterId: 'price', title: 'Цена', content: [
+            { contentId: 'price-1', value: '₽1000 – ₽2000', link: '#' },
+            { contentId: 'price-2', value: '₽2000 – ₽4000', link: '#' },
+            { contentId: 'price-3', value: '₽4000 – ₽6000', link: '#' },
+            { contentId: 'price-4', value: '₽6000 – ₽10000', link: '#' },
+          ]
+        },
       ],
       sorting: {
         default: 'новинки',
         by: [
-        {label: 'цены ↓', value: 'low_to_high'},
-        {label: 'цены ↑', value: 'high_to_low'},
-        {label: 'новинки', value: 'newest'},
-      ]},
+          { label: 'цены ↓', value: 'low_to_high' },
+          { label: 'цены ↑', value: 'high_to_low' },
+          { label: 'новинки', value: 'newest' },
+        ]
+      },
 
-      products: new Array(10).fill('').map(() => 
+      products: new Array(10).fill('').map(() =>
         ({
           productId: Math.random(),
           link: "/product",
@@ -129,23 +134,53 @@ const config = {
           badge: "new",
           quantity: 1,
           sizes: [
-            {sizeId: Math.random(), size: 'M'},
-            {sizeId: Math.random(), size: 'L'},
+            { sizeId: Math.random(), size: 'M' },
+            { sizeId: Math.random(), size: 'L' },
           ],
           price: 3000,
           title: "STELLA BUTTON DOWN MIDI DRESS",
           materials: [
-            {materialId: Math.random(), 
+            {
+              materialId: Math.random(),
               bgImage: '//cdn.shopify.com/s/files/1/0037/8925/8841/files/STELLA.png?22384',
-              image: '//cdn.shopify.com/s/files/1/0037/8925/8841/products/S45-19172-STL-1152_800x.jpg?v=1566340776', active: true}
+              image: '//cdn.shopify.com/s/files/1/0037/8925/8841/products/S45-19172-STL-1152_800x.jpg?v=1566340776', active: true
+            }
           ]
         })
-        )
+      )
     }),
     new HtmlWebpackPlugin({
       title: 'Продукт',
       filename: `product.html`,
       template: path.resolve(__dirname, 'src/html/product.html'),
+
+      product: {
+        productId: Math.random(),
+        images: [
+          { imageId: 1, image: '//cdn.shopify.com/s/files/1/0037/8925/8841/products/190114_Sir_SH04_0076_bf4eef4a-2cdd-4816-8710-01ba963a4566_1440x.jpg?v=1560740808' },
+          { imageId: 2, image: '//cdn.shopify.com/s/files/1/0037/8925/8841/products/190114_Sir_SH04_0085_4faf303f-c314-4148-aee1-22f4ba4c3d47_1440x.jpg?v=1560740808' },
+          { imageId: 3, image: '//cdn.shopify.com/s/files/1/0037/8925/8841/products/ulura_2195a993-5d75-49aa-a9f5-b4291bb283b7_1440x.jpg?v=1560740808' },
+          { imageId: 4, image: '//cdn.shopify.com/s/files/1/0037/8925/8841/products/190114_Sir_SH04_0091_da38f13f-23ff-48e8-8405-b8868f23321e_1440x.jpg?v=1560740808' },
+          { imageId: 5, image: '//cdn.shopify.com/s/files/1/0037/8925/8841/products/S52-19052-STL-0867_1440x.jpg?v=1560740808' },
+          { imageId: 6, image: '//cdn.shopify.com/s/files/1/0037/8925/8841/products/S52-19052-STL-0861_1440x.jpg?v=1560740808' },
+          { imageId: 7, image: '//cdn.shopify.com/s/files/1/0037/8925/8841/products/lacearms_adb8e8ef-020b-4c24-9a81-ee6e518180ed_1440x.jpg?v=1560740808' },
+        ],
+        isLow: true,
+        sizes: [
+          { sizeId: Math.random(), size: 'M' },
+          { sizeId: Math.random(), size: 'L' },
+        ],
+        price: 3000,
+        title: "STELLA BUTTON DOWN MIDI DRESS",
+        colors: [
+          {
+            colorId: Math.random(),
+            bgImage: '//cdn.shopify.com/s/files/1/0037/8925/8841/files/MOMOKO.png?22384',
+            title: "MOLOKO",
+            active: true
+          }
+        ]
+      }
     }),
     new HtmlWebpackPlugin({
       title: 'Lookbook',
