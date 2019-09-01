@@ -8,7 +8,6 @@ require("@babel/register");
 
 const isDevelop = !process.argv.includes('production');
 
-
 const config = {
   entry: ['@babel/polyfill', './src/index.js'],
   output: {
@@ -34,6 +33,13 @@ const config = {
     ]
   },
   plugins: [
+    new webpack.DefinePlugin({
+      process: {
+        env: {
+          NODE_ENV: isDevelop ? '"development"' : '"production"'
+        }
+      }
+    }),
     new webpack.LoaderOptionsPlugin({
       options: {
         handlebarsLoader: {}

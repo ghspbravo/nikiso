@@ -1,0 +1,4 @@
+export const ENVIRONMENTS = {
+  PRODUCTION: 'PRODUCTION',
+  DEVELOPMENT: 'DEBUG'
+};
