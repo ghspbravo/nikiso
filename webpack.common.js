@@ -135,8 +135,8 @@ const config = {
         ({
           productId: Math.random(),
           link: "/product",
-          imageSrc: "//cdn.shopify.com/s/files/1/0037/8925/8841/products/S45-19172-STL-1146_800x.jpg?v=1566340776",
-          imageHoverSrc: "//cdn.shopify.com/s/files/1/0037/8925/8841/products/S45-19172-STL-1152_800x.jpg?v=1566340776",
+          imageSrc: "https://i.pinimg.com/originals/ca/2a/70/ca2a705f5c4c6be90943e6b111257da9.jpg",
+          imageHoverSrc: "https://previews.123rf.com/images/olgakuzmina/olgakuzmina1301/olgakuzmina130100130/17539222-young-girl-with-a-graceful-slender-figure-isolated-on-white-background.jpg",
           badge: "new",
           quantity: 1,
           sizes: [
@@ -149,7 +149,7 @@ const config = {
             {
               materialId: Math.random(),
               bgImage: '//cdn.shopify.com/s/files/1/0037/8925/8841/files/STELLA.png?22384',
-              image: '//cdn.shopify.com/s/files/1/0037/8925/8841/products/S45-19172-STL-1152_800x.jpg?v=1566340776', active: true
+              image: 'https://previews.123rf.com/images/olgakuzmina/olgakuzmina1301/olgakuzmina130100130/17539222-young-girl-with-a-graceful-slender-figure-isolated-on-white-background.jpg', active: true
             }
           ]
         })
