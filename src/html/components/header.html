@@ -16,8 +16,7 @@
   <title>NIKISO — {{ title }}</title>
 
   <!-- FIXME: load styles from local -->
-  <link type="text/css" href="/vendor/theme.css"
-    rel="stylesheet">
+  <link type="text/css" href="/vendor/theme.css" rel="stylesheet">
   <link type="text/css"
     href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/layout.theme.styleLiquid.scss.css?22384"
     rel="stylesheet">
@@ -326,8 +325,45 @@
                 <li class="d-none d-xl-inline"><a href="/about">О компании</a></li>
 
                 <li class="d-none d-xl-inline"><a href="/contacts">Контакты</a></li>
+                <!-- DEV bag action -->
+                <li class="d-none d-xl-inline"><a href="#" class="cart-drawer-action">BAG <span>(0)</span></a></li>
+                <li class="d-xl-none"><a href="#" class="cart-drawer-action"><svg id="bag"
+                      xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: none;
+                            stroke: #000;
+                            stroke-width: 1px;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path class="cls-1" d="M0.455,3.45H9.545v8.1H0.455V3.45Z" />
+                      <path class="cls-1"
+                        d="M2.428,6V3.231A2.676,2.676,0,0,1,5,.461,2.676,2.676,0,0,1,7.571,3.231V5.864" />
+                    </svg>
+                  </a>
+                </li>
+                <!-- DEV wishlist action -->
+                <li class="wishlist-menu d-inline"><a href="#login" data-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="11" height="10" viewBox="0 0 11 10">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: none;
+                            stroke: #000;
+                            stroke-width: 1px;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="Forma_1_copy_2" data-name="Forma 1 copy 2" class="cls-1"
+                        d="M5.5,9.384L4.791,8.7C2.17,6.469.456,4.963,0.456,3.117A2.685,2.685,0,0,1,3.229.445,3.077,3.077,0,0,1,5.5,1.466,3.081,3.081,0,0,1,7.766.445a2.685,2.685,0,0,1,2.772,2.672c0,1.847-1.714,3.352-4.336,5.587Z" />
+                    </svg>
+                  </a>
+                </li>
 
-                <li class="d-none d-xl-inline"><a href="/reviews">Отзывы</a></li>
               </ul>
             </nav>
           </div>
