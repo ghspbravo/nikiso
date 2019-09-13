@@ -1,0 +1,99 @@
+<!-- ORDER MODAL -->
+
+<div class="modal" tabindex="-1" role="dialog" id="order">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title w-100">
+          <button type="button" class="btn-transparent btn-cancel p-0 float-right" data-dismiss="modal"><svg
+              xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="icon">
+              <path fill="#444"
+                d="M15.89 14.696l-4.734-4.734 4.717-4.717c.4-.4.37-1.085-.03-1.485s-1.085-.43-1.485-.03L9.641 8.447 4.97 3.776c-.4-.4-1.085-.37-1.485.03s-.43 1.085-.03 1.485l4.671 4.671-4.688 4.688c-.4.4-.37 1.085.03 1.485s1.085.43 1.485.03l4.688-4.687 4.734 4.734c.4.4 1.085.37 1.485-.03s.43-1.085.03-1.485z">
+              </path>
+            </svg></button>
+        </h5>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="/" id="order-form" accept-charset="UTF-8" class="form-label"><input
+            type="hidden" name="form_type" value="create_customer"><input type="hidden" name="utf8" value="?">
+
+          <div class="row">
+            <div class="col-sm-16">
+              <div class="form-group input">
+                <div class="parent">
+                  <input type="text" name="customer[first_name]" class="form-control input__field" id="FirstName"
+                    autofocus="" style="height: 36px;">
+                  <label class="input__label">Имя</label>
+                  <span class="input-error input-error-text">Please fill the field</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-16">
+              <div class="form-group input">
+                <div class="parent">
+                  <input type="text" name="customer[last_name]" id="LastName" class="form-control input__field"
+                    style="height: 36px;">
+                  <label class="input__label">Фамилия</label>
+                  <span class="input-error input-error-text">Please fill the field</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-16">
+              <div class="form-group input input__filled">
+                <div class="parent">
+                  <input type="email" name="customer[email]" id="Email" class="form-control input__field" value=""
+                    spellcheck="false" autocomplete="off" autocapitalize="off" style="height: 36px;">
+                  <label class="input__label">Email</label>
+                  <span class="input-error">Please fill the field</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-16">
+              <div class="form-group input">
+                <div class="parent">
+                  <input type="text" name="customer[password]" id="CreatePassword" class="form-control input__field"
+                    style="height: 36px;">
+                  <label class="input__label">Номер телефона</label>
+                  <span class="input-error">Please fill the field</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="text-center form-btn">
+            <button type="submit" value="" class="btn btn-theme">Заказать</button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- SUCCESS modal -->
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title w-100">Ваш заказ принят
+          <button type="button" class="btn-transparent btn-cancel p-0 float-right" data-dismiss="modal"><svg
+              xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="icon">
+              <path fill="#444"
+                d="M15.89 14.696l-4.734-4.734 4.717-4.717c.4-.4.37-1.085-.03-1.485s-1.085-.43-1.485-.03L9.641 8.447 4.97 3.776c-.4-.4-1.085-.37-1.485.03s-.43 1.085-.03 1.485l4.671 4.671-4.688 4.688c-.4.4-.37 1.085.03 1.485s1.085.43 1.485.03l4.688-4.687 4.734 4.734c.4.4 1.085.37 1.485-.03s.43-1.085.03-1.485z">
+              </path>
+            </svg></button>
+        </h5>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          Спасибо за Ваш заказ <p> В ближайшее время с Вами свяжется наш менеджер.
+            <br /> Ознакомьтесь с <a href="/faq">политикой доставки и ответами на популярные вопросы</a></p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

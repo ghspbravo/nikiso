@@ -9,7 +9,8 @@ require("@babel/register");
 const isDevelop = !process.argv.includes('production');
 
 const config = {
-  entry: ['@babel/polyfill', './src/index.js'],
+  // '@babel/polyfill', 
+  entry: ['./src/index.js'],
   output: {
     path: __dirname + '/dist',
     filename: 'bundle.js',
@@ -57,6 +58,11 @@ const config = {
       title: 'О нас',
       filename: `about.html`,
       template: path.resolve(__dirname, 'src/html/about.html'),
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Политика конфиденциальности',
+      filename: `terms.html`,
+      template: path.resolve(__dirname, 'src/html/terms.html'),
     }),
     new HtmlWebpackPlugin({
       title: 'Вопросы и ответы',
@@ -192,6 +198,9 @@ const config = {
       title: 'Lookbook',
       filename: `lookbook.html`,
       template: path.resolve(__dirname, 'src/html/lookbook.html'),
+
+      images: new Array(28).fill('').map(() => 
+      ({ imageId: Math.random, imageName: "photo-name", imageSrc: "https://media.istockphoto.com/photos/gorgeous-female-brunette-model-in-white-clothes-picture-id1148523318" }))
     }),
   ].concat(!isDevelop ? [new CleanWebpackPlugin()] : []),
   resolve: {

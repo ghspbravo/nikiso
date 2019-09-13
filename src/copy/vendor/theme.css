@@ -12813,9 +12813,9 @@ nav.navbar.nav.theme-menu.right-menu,nav.navbar.nav.theme-menu.right-menu li:las
     }
 }
 
-.cart-drawer.show-drawer {
+/* .cart-drawer.show-drawer {
     right: 0
-}
+} */
 
 .cart-drawer .quick-add {
     display: none!important

@@ -15,7 +15,6 @@
 
   <title>NIKISO — {{ title }}</title>
 
-  <!-- FIXME: load styles from local -->
   <link type="text/css" href="/vendor/theme.css" rel="stylesheet">
   <link type="text/css"
     href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/layout.theme.styleLiquid.scss.css?22384"
@@ -74,36 +73,8 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-  <!-- FIXME: change to local -->
-  <script type="text/javascript"
-    src="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/vendors@layout.theme.js?22384" defer="defer"></script>
   <script type="text/javascript" src="/vendor/theme.js" defer="defer"></script>
-  <link rel="prefetch"
-    href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/vendors@template.article@template.gift_card@template.product.js?22384"
-    as="script">
-  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.article.js?22384"
-    as="script">
-  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.cart.js?22384" as="script">
-  <link rel="prefetch"
-    href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/vendors@template.collection@template.product.js?22384"
-    as="script">
-  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.collection.js?22384"
-    as="script">
-  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.gift_card.js?22384"
-    as="script">
-  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.index.js?22384"
-    as="script">
-  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.page.campaign.js?22384"
-    as="script">
-  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/vendors@template.page.js?22384"
-    as="script">
-  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.page.js?22384" as="script">
-  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.product.js?22384"
-    as="script">
-  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.addresses.js?22384"
-    as="script">
-  <link rel="prefetch" href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/assets/template.login.js?22384"
-    as="script">
+
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', '');
     var customerlabel = false;
@@ -118,20 +89,6 @@
   </script>
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
-  <!-- TODO: research if it's meanfull -->
-  <script crossorigin="anonymous" defer="defer"
-    src="//cdn.shopify.com/s/assets/shopify_pay/storefront-8ddbd55cc19e1ebbff92d676e1481c8e6b42e0c2714d3fdf6b810b1f193347b8.js?v=20190107"></script>
-  <script integrity="sha256-XvJAR0GWTFITqI9Je626Jg9XHK1rY52ie+f6Eq4D/dM=" defer="defer"
-    src="//cdn.shopify.com/s/assets/storefront/express_buttons-5ef2404741964c5213a88f497badba260f571cad6b639da27be7fa12ae03fdd3.js"
-    crossorigin="anonymous"></script>
-  <script integrity="sha256-qzPTa4Ven/Yc2yyXr9BKZWCTXSrPTCnbGdWsxA7YCw0=" defer="defer"
-    src="//cdn.shopify.com/s/assets/storefront/features-ab33d36b855e9ff61cdb2c97afd04a6560935d2acf4c29db19d5acc40ed80b0d.js"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" media="screen"
-    href="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/compiled_assets/styles.css?22384">
-  <script id="sections-script" data-sections="contact" defer="defer"
-    src="//cdn.shopify.com/s/files/1/0037/8925/8841/t/25/compiled_assets/scripts.js?22384"></script>
 
 </head>
 
@@ -326,7 +283,7 @@
 
                 <li class="d-none d-xl-inline"><a href="/contacts">Контакты</a></li>
                 <!-- DEV bag action -->
-                <li class="d-none d-xl-inline"><a href="#" class="cart-drawer-action">BAG <span>(0)</span></a></li>
+                <li class="d-none d-xl-inline"><a href="#" class="cart-drawer-action">Корзина<span>(0)</span></a></li>
                 <li class="d-xl-none"><a href="#" class="cart-drawer-action"><svg id="bag"
                       xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12">
                       <defs>
@@ -346,8 +303,8 @@
                   </a>
                 </li>
                 <!-- DEV wishlist action -->
-                <li class="wishlist-menu d-inline"><a href="#login" data-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg"
-                      width="11" height="10" viewBox="0 0 11 10">
+                <li class="wishlist-menu d-inline"><a href="#login" data-toggle="modal"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                       <defs>
                         <style>
                           .cls-1 {
@@ -533,46 +490,13 @@
 
     <!-- CART SIDE -->
     <section>
-      <div class="cart-drawer">
-        <div class="cart-drawer-breakup">
-          <div class="cart-drawer-close"><svg id="x" xmlns="http://www.w3.org/2000/svg" width="17.875" height="17.875"
-              viewBox="0 0 17.875 17.875">
-              <defs>
-                <style>
-                  .cls-1 {
-                    fill: #fff;
-                    stroke: #000;
-                    stroke-width: 1px;
-                    fill-rule: evenodd;
-                  }
-                </style>
-              </defs>
-              <path class="cls-1" d="M0.4,0.4L17.6,17.6" transform="translate(-0.063 -0.063)" />
-              <path id="Shape_907_copy" data-name="Shape 907 copy" class="cls-1" d="M17.562,0.437L0.438,17.562"
-                transform="translate(-0.063 -0.063)" />
-            </svg>
-          </div>
-          <div class="cart-count">Корзина <span>(0)</span></div>
-          <div class="cart-total">Всего: <span>0</span> ₽</div>
+      {{> ./cart.html }}
+      {{> ./wishlist.html }}
 
-          <div class="cart-checkout">
-            <form action="/cart" method="post">
-              <a href="/cart" class="btn btn-theme btn-lg">Перейти в корзину</a>
-              <button type="submit" name="checkout" class="btn btn-theme btn-lg">Заказать</button>
-            </form>
-          </div>
-        </div>
-        <div class="cart-drawer-list">
-          <div class="row">
-            <div class="col-sm-16">
+      {{> ./order.html }}
 
-            </div>
-          </div>
-        </div>
-      </div>
   </div>
   </section>
-
 
   <!-- LOGIN MODAL with footer -->
   <div class="modal login-modal" tabindex="-1" role="dialog" id="login">

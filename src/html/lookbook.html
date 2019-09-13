@@ -1,3 +1,27 @@
 {{> components/header.html title=htmlWebpackPlugin.options.title }}
 
+<main role="main" id="MainContent">
+  <div class="container-fluid lookbook">
+    <h1 class="page-title text-center">LOOKBOOK</h1>
+
+    <div class="season">
+      <div class="season-title">
+        <h2 class="text-center">Лето 2019</h2>
+      </div>
+
+      <div class="lookbook-grid">
+
+        {{#each htmlWebpackPlugin.options.images}}
+        <div class="lookbook-item">
+          <img id="{{imageId}}" src="{{imageSrc}}" alt="{{imageName}}">
+        </div>
+        {{/each}}
+
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
 {{> components/footer.html }}

@@ -1,0 +1,16 @@
+.side-modal.show {
+  right: 0;
+}
+
+.product-sub-header {
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.grid-list-wrap {
+  margin-top: -45px;
+}
+
+.grid-list-img {
+  cursor: default;
+}

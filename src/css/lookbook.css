@@ -1,0 +1,35 @@
+.lookbook>.season {
+  margin-top: 50px;
+}
+
+.lookbook .season-title {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.lookbook-grid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.lookbook-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lookbook-item:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: span 2;
+}
+
+.lookbook-item:nth-child(14n - 13) {
+  grid-column: 1 / 3;
+  grid-row: span 2;
+}
+
+.lookbook-item:nth-child(14n - 6) {
+  grid-column: 3 / 5;
+  grid-row: span 2;
+}
