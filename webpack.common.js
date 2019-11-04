@@ -137,9 +137,9 @@ const config = {
         ]
       },
 
-      products: new Array(10).fill('').map(() =>
+      products: new Array(10).fill('').map((_, index) =>
         ({
-          productId: Math.random(),
+          productId: index,
           link: "/product",
           imageSrc: "https://i.pinimg.com/originals/ca/2a/70/ca2a705f5c4c6be90943e6b111257da9.jpg",
           imageHoverSrc: "https://previews.123rf.com/images/olgakuzmina/olgakuzmina1301/olgakuzmina130100130/17539222-young-girl-with-a-graceful-slender-figure-isolated-on-white-background.jpg",

@@ -447,7 +447,12 @@
               {{#each htmlWebpackPlugin.options.products}}
               <div class="grid-40 col-8">
                 <div class="grid-list-40 grid-collection">
-                  <div class="grid-list-img" id="product-{{productId}}">
+                  <div class="js-product grid-list-img" id="product-{{productId}}"
+                    data-id="{{productId}}"
+                    data-title="{{title}}"
+                    data-price="{{price}}"
+                    data-image="{{imageSrc}}"
+                  >
                     <a href="{{link}}">
                       <img
                         src="{{imageSrc}}"

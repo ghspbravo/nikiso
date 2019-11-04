@@ -6,6 +6,9 @@ import './css/lookbook.css';
 import './css/modals.css';
 
 import store from './js/store';
+import { PRODUCTS_CLASSES } from './js/constants';
+import getProductsFromDom from './js/interactive/products/getProductsFromDom';
+import { loadProducts } from './js/actions/productsActions';
 
 document.addEventListener('DOMContentLoaded', () => {
   const isDevelop = (process.env || {}).NODE_ENV === 'development';
@@ -15,11 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
     devscripts.fixPageLinks();
   }
 
-  document.querySelectorAll('.js-cart-add').forEach(cartAddControl => {
-    cartAddControl.addEventListener("click", () => {
-      store.dispatch({
-        type: actionTypes.ADD_TO_CART
-      })
-    })
-  })
+  // ========== PRODUCTS =============
+
+  const productsDomList = [...document.getElementsByClassName(PRODUCTS_CLASSES.PRODUCT_ITEM)];
+  // @ts-ignore
+  const productsList = getProductsFromDom(productsDomList);
+
+  store.dispatch(loadProducts(productsList));
+
+
+
 });
